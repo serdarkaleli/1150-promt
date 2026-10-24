@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Master Prompt Kütüphanesi",
+  "description": "Kişisel Master Promptlarınızı güvenle saklayın, kategorize edin, etiketleyin, arayın ve tek tıkla kopyalayın.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

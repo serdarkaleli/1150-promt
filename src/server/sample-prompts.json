@@ -1,0 +1,1816 @@
+{
+  "general": [
+    {
+      "title": "Summarize Text",
+      "prompt": "Summarize the following text in {number} sentences, focusing on the key takeaways:\n\n{text_to_summarize}",
+      "language": "text"
+    },
+    {
+      "title": "Explain Concept (Simple)",
+      "prompt": "Explain the concept of {concept} using a simple analogy that a beginner can understand.",
+      "language": "text"
+    },
+    {
+      "title": "Explain Concept (Detailed)",
+      "prompt": "Provide a comprehensive explanation of {concept}. Cover its definition, history, core principles, practical applications, and potential challenges or limitations.",
+      "language": "text"
+    },
+    {
+      "title": "Brainstorm Ideas",
+      "prompt": "Generate a list of at least 10 creative and diverse ideas related to {topic}. Include both conventional and unconventional approaches.",
+      "language": "text"
+    },
+    {
+      "title": "Translate Text",
+      "prompt": "Translate the following text from {source_language} to {target_language}. Ensure the translation is accurate and maintains the original tone:\n\n{text_to_translate}",
+      "language": "text"
+    },
+    {
+      "title": "Generate Questions",
+      "prompt": "Based on the text below, generate 5 thought-provoking questions that encourage critical thinking:\n\n{context_text}",
+      "language": "text"
+    },
+    {
+      "title": "Rewrite Text (Tone)",
+      "prompt": "Rewrite the following passage to adopt a more {desired_tone} tone (e.g., formal, informal, enthusiastic, skeptical, persuasive):\n\n{text_to_rewrite}",
+      "language": "text"
+    },
+    {
+      "title": "Pros and Cons Analysis",
+      "prompt": "Analyze the primary advantages (pros) and disadvantages (cons) of adopting {strategy_or_technology}. Provide at least 3 points for each.",
+      "language": "text"
+    },
+    {
+      "title": "Create Analogy",
+      "prompt": "Develop an original analogy to explain the complex process or concept of {complex_topic} in a relatable way.",
+      "language": "text"
+    },
+    {
+      "title": "Argument For/Against",
+      "prompt": "Construct a concise argument {for_or_against} the following statement: {statement}. Support your argument with logical points.",
+      "language": "text"
+    },
+    {
+      "title": "Define Term",
+      "prompt": "Provide a clear and concise definition for the term '{term}' in the context of {field_or_context}.",
+      "language": "text"
+    },
+    {
+      "title": "Check Grammar & Style",
+      "prompt": "Review the following text for grammatical errors, spelling mistakes, and awkward phrasing. Suggest improvements for clarity and flow:\n\n{text_to_review}",
+      "language": "text"
+    }
+  ],
+  "productivity_work_mgmt": [
+    {
+      "title": "Prioritize To-Do List",
+      "prompt": "Help me create a prioritized to-do list based on these tasks: [list tasks]. Task A is due by [time], Task B requires [resource], and Task C impacts [stakeholder].",
+      "language": "text"
+    },
+    {
+      "title": "Weekly Schedule Template",
+      "prompt": "Create a weekly schedule template that balances my work priorities, personal commitments, and health goals.",
+      "language": "text"
+    },
+    {
+      "title": "Project Decision Matrix",
+      "prompt": "Design a decision matrix to help me evaluate which of these projects I should tackle first: [list projects with brief descriptions].",
+      "language": "text"
+    },
+    {
+      "title": "Time-Blocking Strategy",
+      "prompt": "Suggest a time-blocking strategy for my workday that accounts for deep work, meetings, and administrative tasks.",
+      "language": "text"
+    },
+    {
+      "title": "Weekly Review Template",
+      "prompt": "Generate a template for a weekly review process to evaluate my productivity and adjust my systems.",
+      "language": "text"
+    },
+    {
+      "title": "Meeting Agenda Creation",
+      "prompt": "Create an agenda for a 60-minute [team/client] meeting focused on [topic]. Include time allocations for each section.",
+      "language": "text"
+    },
+    {
+      "title": "Brainstorming Discussion Questions",
+      "prompt": "Generate a list of open-ended questions to stimulate discussion during our brainstorming session on [topic].",
+      "language": "text"
+    },
+    {
+      "title": "Meeting Action Item Framework",
+      "prompt": "Design a framework for capturing action items and decisions during meetings to ensure follow-through.",
+      "language": "text"
+    },
+    {
+      "title": "Difficult Conversation Facilitation",
+      "prompt": "Suggest strategies for facilitating a difficult conversation about [topic] during our upcoming team meeting.",
+      "language": "text"
+    },
+    {
+      "title": "Pre-Meeting Checklist",
+      "prompt": "Create a pre-meeting checklist to ensure all participants come prepared and meetings are efficient.",
+      "language": "text"
+    }
+  ],
+  "analytics_data_insights": [
+    {
+      "title": "Identify KPIs",
+      "prompt": "Identify the top 5 KPIs for [industry/field] and explain their significance to business performance.",
+      "language": "text"
+    },
+    {
+      "title": "SQL Metric Calculation",
+      "prompt": "Provide SQL queries to calculate [specific metrics] from a standard database schema.",
+      "language": "sql"
+    },
+    {
+      "title": "Customer Segmentation Model",
+      "prompt": "Design a customer segmentation model using [available data points]. What insights can we derive?",
+      "language": "text"
+    },
+    {
+      "title": "Funnel Analysis",
+      "prompt": "Create a funnel analysis for [specific process]. Where are the major drop-off points?",
+      "language": "text"
+    },
+    {
+      "title": "Predictive Model Development",
+      "prompt": "Develop a predictive model for [business outcome]. What variables are most influential?",
+      "language": "text"
+    },
+    {
+      "title": "Effective Data Visualization Methods",
+      "prompt": "Suggest the most effective data visualization methods to represent [type of data] for [target audience].",
+      "language": "text"
+    },
+    {
+      "title": "Monthly Performance Dashboard Template",
+      "prompt": "Create a template for a monthly performance dashboard that tracks [key metrics].",
+      "language": "text"
+    },
+    {
+      "title": "Presenting Complex Data Insights",
+      "prompt": "Design a framework for presenting complex data insights to non-technical stakeholders.",
+      "language": "text"
+    },
+    {
+      "title": "Narrate Data Trend Story",
+      "prompt": "Generate a script for narrating the story behind this trend in our [specific metric].",
+      "language": "text"
+    },
+    {
+      "title": "Competitive Analysis Report Methodology",
+      "prompt": "Develop a methodology for a competitive analysis report in the [industry] sector.",
+      "language": "text"
+    }
+  ],
+  "writing_content_creation": [
+    {
+      "title": "Article Outline Generation",
+      "prompt": "Generate an outline for a comprehensive article about [topic], focusing on [specific aspects].",
+      "language": "text"
+    },
+    {
+      "title": "Engaging Headline Generation",
+      "prompt": "Create a list of 10 engaging headlines for an article about [topic] that would appeal to [target audience].",
+      "language": "text"
+    },
+    {
+      "title": "Blog Hook and Conclusion",
+      "prompt": "Suggest a hook and conclusion for my blog post about [topic] that creates a cohesive narrative.",
+      "language": "text"
+    },
+    {
+      "title": "Blog Content Calendar",
+      "prompt": "Develop a content calendar for a blog focusing on [industry/topic] with themes for the next three months.",
+      "language": "text"
+    },
+    {
+      "title": "Rewrite Paragraph for Engagement",
+      "prompt": "Rewrite this paragraph to make it more engaging while maintaining its informational value: [paragraph].",
+      "language": "text"
+    },
+    {
+      "title": "LinkedIn Post Ideas",
+      "prompt": "Generate 5 LinkedIn post ideas for sharing insights about [industry trend].",
+      "language": "text"
+    },
+    {
+      "title": "Twitter Promotion Series",
+      "prompt": "Create a week's worth of Twitter posts promoting [product/service/event] without being repetitive.",
+      "language": "text"
+    },
+    {
+      "title": "Instagram Caption Suggestions",
+      "prompt": "Suggest captions for Instagram that would accompany photos of [subject] and resonate with [target audience].",
+      "language": "text"
+    },
+    {
+      "title": "Social Media Storytelling Framework",
+      "prompt": "Develop a storytelling framework for a series of social media posts about our company's journey.",
+      "language": "text"
+    },
+    {
+      "title": "Repurpose Content for Social Media",
+      "prompt": "Create a template for repurposing long-form content into social media snippets.",
+      "language": "text"
+    },
+    {
+      "title": "Blog Post Framework",
+      "prompt": "Create an engaging blog post about {topic} for {target_audience}.\n\nRequirements:\n- Attention-grabbing headline\n- Hook in the first paragraph\n- 3-5 main sections with H2 headers\n- Practical examples or case studies\n- Call-to-action at the end\n- Word count: approximately {word_count}\n- Tone: {professional/conversational/technical}",
+      "language": "text"
+    },
+    {
+      "title": "SEO Content Outline",
+      "prompt": "Create an SEO content outline for a {word_count}-word article on \"{topic}\".\n\nInclude:\n- Primary keyword: {primary_keyword}\n- Secondary keywords: {keyword_2}, {keyword_3}\n- Headers from H1 to H4\n- Key points under each section\n- Suggested internal/external links\n- Meta description (155 chars max)",
+      "language": "text"
+    },
+    {
+      "title": "Email Copywriting",
+      "prompt": "Write a {type} email for {purpose}.\n\nContext:\n- Audience: {target_audience}\n- Goal: {desired_action}\n- Tone: {formal/friendly/urgent}\n- Previous interaction: {context_if_any}\n\nInclude:\n- Subject line (A/B test two versions)\n- Preview text\n- Body with clear CTA",
+      "language": "text"
+    },
+    {
+      "title": "Rewrite for Clarity",
+      "prompt": "Rewrite the following text to be clearer and more concise. Remove jargon and make it accessible to someone without background in {field}. Keep the core message intact.\n\nOriginal:\n{paste_text}",
+      "language": "text"
+    },
+    {
+      "title": "Storytelling Hook Generator",
+      "prompt": "Generate 5 different opening hooks for a story/article about {topic}. Each hook should use a different technique:\n1. Surprising statistic\n2. Provocative question\n3. Vivid scene-setting\n4. Personal anecdote format\n5. Contrarian statement",
+      "language": "text"
+    }
+  ],
+  "email_communication": [
+    {
+      "title": "Newsletter Subject Lines",
+      "prompt": "Give me 10 subject lines for my [niche] newsletter.",
+      "language": "text"
+    },
+    {
+      "title": "Promotional Email Body Copy",
+      "prompt": "Write the body copy for a promotional email with the subject line: [Your subject line].",
+      "language": "text"
+    },
+    {
+      "title": "Follow-up Email Body Copy",
+      "prompt": "Write a follow-up email with the subject line: [Your subject line].",
+      "language": "text"
+    },
+    {
+      "title": "Re-engage Inactive Subscribers",
+      "prompt": "How can I re-engage inactive subscribers on my email list?",
+      "language": "text"
+    },
+    {
+      "title": "Email A/B Testing Strategy",
+      "prompt": "How can I use A/B testing to find out the best time to send my emails (and the best frequency)?",
+      "language": "text"
+    },
+    {
+      "title": "Translate Email",
+      "prompt": "Translate this email into [language] please. Keep the tone [friendly] and write it like a native.",
+      "language": "text"
+    },
+    {
+      "title": "Diplomatic Response to Colleague",
+      "prompt": "Draft a diplomatic response to this challenging email from a colleague: [email content].",
+      "language": "text"
+    },
+    {
+      "title": "Constructive Feedback Template",
+      "prompt": "Create a template for providing constructive feedback to a team member about [specific issue].",
+      "language": "text"
+    },
+    {
+      "title": "Negotiation Talking Points",
+      "prompt": "Generate talking points for a negotiation about [topic] where my primary goal is [objective].",
+      "language": "text"
+    },
+    {
+      "title": "Professional Introduction Email",
+      "prompt": "Write a professional introduction email connecting two colleagues who could benefit from knowing each other.",
+      "language": "text"
+    },
+    {
+      "title": "Communicate Project Delays",
+      "prompt": "Develop a framework for communicating project delays to stakeholders that maintains trust.",
+      "language": "text"
+    }
+  ],
+  "ux_ui_design": [
+    {
+      "title": "Generate UI Design Requirements",
+      "prompt": "Generate examples of UI design requirements for a [mobile app].",
+      "language": "text"
+    },
+    {
+      "title": "Typography Style Guide",
+      "prompt": "Generate a typography style guide for a [mobile application] in excel format.",
+      "language": "text"
+    },
+    {
+      "title": "Burger Menu UI Cases",
+      "prompt": "What are the UI cases that need to be considered when designing a [burger menu].",
+      "language": "text"
+    },
+    {
+      "title": "Competitor Analysis from Reviews",
+      "prompt": "Generate a sample report of a competitor's [product] by using online customer reviews. For the sake of this analysis, we will focus on product usability.",
+      "language": "text"
+    },
+    {
+      "title": "User Onboarding Flow Design",
+      "prompt": "Design a user onboarding flow for a [fintech app]. What key steps and information should be included to build trust and engagement?",
+      "language": "text"
+    },
+    {
+      "title": "Suggest Micro-interactions",
+      "prompt": "Suggest micro-interactions to enhance user engagement on a [type of website/app].",
+      "language": "text"
+    },
+    {
+      "title": "Heuristic Evaluation Framework",
+      "prompt": "Create a framework for conducting a heuristic evaluation of a [type of digital product].",
+      "language": "text"
+    },
+    {
+      "title": "User Persona Templates",
+      "prompt": "Develop persona templates for the primary users of a [type of service].",
+      "language": "text"
+    },
+    {
+      "title": "User Interview Questions (Pain Points)",
+      "prompt": "Generate a list of questions for user interviews to better understand pain points in [specific process].",
+      "language": "text"
+    },
+    {
+      "title": "User Journey Map Template",
+      "prompt": "Design a user journey map template for a customer purchasing [product/service].",
+      "language": "text"
+    }
+  ],
+  "customer_service": [
+    {
+      "title": "Draft Empathetic Response (Complaint)",
+      "prompt": "Draft an empathetic response to a customer complaint regarding {issue (e.g., late delivery, product defect)}. Acknowledge the problem, apologize, and outline the next step.",
+      "language": "text"
+    },
+    {
+      "title": "Draft Response (Inquiry)",
+      "prompt": "Draft a clear and helpful response to a customer inquiry asking about {question (e.g., product features, return policy, how to use a feature)}.",
+      "language": "text"
+    },
+    {
+      "title": "De-escalation Phrases",
+      "prompt": "Suggest 5 phrases that can be used in customer service to help de-escalate a situation with an upset customer.",
+      "language": "text"
+    },
+    {
+      "title": "Handle Frustrated Customer (Damaged Product)",
+      "prompt": "Craft a script for handling a frustrated customer who received a damaged product. How can we turn this negative experience into a positive one?",
+      "language": "text"
+    },
+    {
+      "title": "Troubleshooting Decision Tree",
+      "prompt": "Design a decision tree for troubleshooting common issues with [product/service]. What questions should we ask to quickly identify the problem?",
+      "language": "text"
+    },
+    {
+      "title": "Customer Follow-up Template",
+      "prompt": "Create a template for following up with customers after resolving their issues. How can we ensure they're satisfied and encourage feedback?",
+      "language": "text"
+    },
+    {
+      "title": "Proactive Customer Service Questions",
+      "prompt": "Develop a list of proactive questions to ask customers to prevent potential issues before they arise. What can we anticipate?",
+      "language": "text"
+    },
+    {
+      "title": "Social Media Customer Service Responses",
+      "prompt": "Write a series of responses for social media customer service interactions. How can we maintain our brand voice while addressing concerns publicly?",
+      "language": "text"
+    },
+    {
+      "title": "Customer Feedback Survey Design",
+      "prompt": "Design a customer feedback survey that provides actionable insights. What questions will help us improve our service?",
+      "language": "text"
+    },
+    {
+      "title": "Analyze Customer Feedback Framework",
+      "prompt": "Create a framework for analyzing customer feedback and identifying patterns.",
+      "language": "text"
+    },
+    {
+      "title": "Implement Customer Suggestions Strategy",
+      "prompt": "Develop a strategy for implementing customer suggestions and communicating changes back to them.",
+      "language": "text"
+    },
+    {
+      "title": "Quarterly Customer Satisfaction Report",
+      "prompt": "Generate a template for a quarterly customer satisfaction report that highlights trends and opportunities.",
+      "language": "text"
+    },
+    {
+      "title": "Customer Loyalty Program Structure",
+      "prompt": "Design a loyalty program structure that rewards customer engagement and feedback.",
+      "language": "text"
+    }
+  ],
+  "healthcare_medical": [
+    {
+      "title": "Differential Diagnosis Checklist",
+      "prompt": "Generate a differential diagnosis checklist for a patient presenting with [symptoms].",
+      "language": "text"
+    },
+    {
+      "title": "Patient Education Handout",
+      "prompt": "Create a patient education handout explaining [medical condition] in simple, non-technical language.",
+      "language": "text"
+    },
+    {
+      "title": "Medication Understanding Assessment Questions",
+      "prompt": "Develop a list of questions to assess a patient's understanding of their newly prescribed medication.",
+      "language": "text"
+    },
+    {
+      "title": "Treatment Options Decision Support Tool",
+      "prompt": "Design a decision support tool for evaluating treatment options for [medical condition] based on patient factors.",
+      "language": "text"
+    },
+    {
+      "title": "Patient Progress Monitoring Framework",
+      "prompt": "Generate a framework for monitoring and documenting patient progress for [chronic condition].",
+      "language": "text"
+    },
+    {
+      "title": "Stay Updated with Medical Research",
+      "prompt": "Suggest a structured approach to staying updated with the latest research in [medical specialty].",
+      "language": "text"
+    },
+    {
+      "title": "Present Complex Patient Case Template",
+      "prompt": "Create a template for presenting a complex patient case during medical rounds.",
+      "language": "text"
+    },
+    {
+      "title": "Shift Handoff Checklist",
+      "prompt": "Develop a checklist for effective handoffs between healthcare providers during shift changes.",
+      "language": "text"
+    },
+    {
+      "title": "Multidisciplinary Team Discussion Questions",
+      "prompt": "Generate a list of questions to facilitate a multidisciplinary team discussion about a complex patient.",
+      "language": "text"
+    },
+    {
+      "title": "Quality Improvement Initiative Framework",
+      "prompt": "Design a framework for a quality improvement initiative addressing [healthcare issue].",
+      "language": "text"
+    }
+  ],
+  "learning_education": [
+    {
+      "title": "Study Plan Creation",
+      "prompt": "Create a study plan for mastering [subject] in [timeframe], including milestones and resources.",
+      "language": "text"
+    },
+    {
+      "title": "Generate Practice Questions",
+      "prompt": "Generate a set of practice questions that test understanding of [concept] at different levels of complexity.",
+      "language": "text"
+    },
+    {
+      "title": "Effective Note-Taking Framework",
+      "prompt": "Develop a framework for taking effective notes while reading research papers about [topic].",
+      "language": "text"
+    },
+    {
+      "title": "Glossary of Key Terms",
+      "prompt": "Create a glossary of key terms and concepts for beginners learning about [subject].",
+      "language": "text"
+    },
+    {
+      "title": "Spaced Repetition Schedule Design",
+      "prompt": "Design a spaced repetition schedule for memorizing [content] for long-term retention.",
+      "language": "text"
+    },
+    {
+      "title": "Active Learning Lesson Plan",
+      "prompt": "Generate a lesson plan for teaching [concept] to [audience] using active learning techniques.",
+      "language": "text"
+    },
+    {
+      "title": "Assessment Rubric Creation",
+      "prompt": "Create a rubric for assessing [type of assignment] that provides constructive feedback.",
+      "language": "text"
+    },
+    {
+      "title": "Critical Thinking Discussion Prompts",
+      "prompt": "Develop discussion prompts that encourage critical thinking about [topic].",
+      "language": "text"
+    },
+    {
+      "title": "Peer Teaching Framework",
+      "prompt": "Design a framework for peer teaching that helps students reinforce their understanding of [subject].",
+      "language": "text"
+    },
+    {
+      "title": "Explain Complex Concept (Analogies)",
+      "prompt": "Generate analogies and examples to explain [complex concept] to beginners.",
+      "language": "text"
+    }
+  ],
+  "personal_development": [
+    {
+      "title": "Create Habit Plan",
+      "prompt": "Help me create a plan to build the habit of {desired_habit}. Outline steps including: \n1. Cue/Trigger (Making it obvious) \n2. Craving/Motivation (Making it attractive) \n3. Response/Action (Making it easy) \n4. Reward/Satisfaction (Making it satisfying). \nSuggest a specific starting frequency and duration.",
+      "language": "text"
+    },
+    {
+      "title": "Set SMART Goal",
+      "prompt": "Help me formulate a SMART (Specific, Measurable, Achievable, Relevant, Time-bound) goal for my aspiration to {general_goal (e.g., exercise more, learn a skill, read more)}.",
+      "language": "text"
+    },
+    {
+      "title": "Introspective Exercise Prompt",
+      "prompt": "Provide an introspective prompt or question to help someone reflect on their {area_of_reflection (e.g., core values, recent challenges, sources of happiness)}.",
+      "language": "text"
+    },
+    {
+      "title": "Workout Plan Concept",
+      "prompt": "Outline a basic weekly workout plan concept for a beginner aiming for {fitness_goal (e.g., general fitness, weight loss, muscle gain)}, including types of exercises and frequency. Note: Consult a professional for personalized advice.",
+      "language": "text"
+    },
+    {
+      "title": "Stress Management Technique",
+      "prompt": "Describe one technique for managing stress, such as {technique_name (e.g., deep breathing, mindfulness, progressive muscle relaxation)}. Explain how to practice it.",
+      "language": "text"
+    },
+    {
+      "title": "Break Down Large Goal",
+      "prompt": "My main goal is to {large_goal_description (e.g., 'write a book', 'run a marathon', 'learn conversational Spanish')}. Break this down into 5-7 smaller, actionable steps or milestones I can focus on over the next {timeframe (e.g., month, quarter)}.",
+      "language": "text"
+    },
+    {
+      "title": "Habit Tracking System Design",
+      "prompt": "Create a habit tracking system for building consistency with [habit], including accountability mechanisms.",
+      "language": "text"
+    },
+    {
+      "title": "Monthly Personal Review Questions",
+      "prompt": "Generate a list of reflection questions for a monthly personal review of my progress toward [goal].",
+      "language": "text"
+    },
+    {
+      "title": "Identify High-Impact Habits",
+      "prompt": "Design a framework for identifying which habits would most impact my goal of [goal].",
+      "language": "text"
+    },
+    {
+      "title": "Overcome Habit Obstacles",
+      "prompt": "Develop a strategy for overcoming common obstacles to maintaining [habit].",
+      "language": "text"
+    },
+    {
+      "title": "Daily Mindfulness Practices",
+      "prompt": "Suggest daily mindfulness practices that can be integrated into a busy schedule.",
+      "language": "text"
+    },
+    {
+      "title": "Decision Framework (Yes/No)",
+      "prompt": "Create a decision framework for evaluating whether to say yes or no to new commitments.",
+      "language": "text"
+    },
+    {
+      "title": "Stress Management Strategies",
+      "prompt": "Generate strategies for managing stress during particularly challenging periods at work.",
+      "language": "text"
+    },
+    {
+      "title": "Personal Energy Management Plan",
+      "prompt": "Design a personal energy management plan that accounts for my natural productivity rhythms.",
+      "language": "text"
+    },
+    {
+      "title": "Weekly Mental Health Check-in",
+      "prompt": "Develop a set of questions for a weekly mental health check-in with myself.",
+      "language": "text"
+    }
+  ],
+  "problem_solving_decision": [
+    {
+      "title": "Analyze Situation from Multiple Perspectives",
+      "prompt": "Help me analyze this situation from multiple perspectives: [describe situation].",
+      "language": "text"
+    },
+    {
+      "title": "Identify and Test Assumptions",
+      "prompt": "Generate a list of assumptions I might be making about [issue] and how to test them.",
+      "language": "text"
+    },
+    {
+      "title": "Pre-Mortem Analysis",
+      "prompt": "Create a pre-mortem analysis for my plan to [plan]. What could go wrong and how can I prevent it?",
+      "language": "text"
+    },
+    {
+      "title": "Evaluate Information Source Credibility",
+      "prompt": "Develop a framework for evaluating the credibility of information sources about [topic].",
+      "language": "text"
+    },
+    {
+      "title": "Solicit Diverse Viewpoints",
+      "prompt": "Design a process for soliciting diverse viewpoints before making a decision about [issue].",
+      "language": "text"
+    },
+    {
+      "title": "Unconventional Problem Solving",
+      "prompt": "Generate unconventional approaches to solving [problem] by applying principles from [unrelated field].",
+      "language": "text"
+    },
+    {
+      "title": "Generate Creative Constraints",
+      "prompt": "Create constraints that might lead to innovative solutions for [challenge].",
+      "language": "text"
+    },
+    {
+      "title": "Reframe Problem with 'How Might We'",
+      "prompt": "Develop a series of 'how might we' questions to reframe [problem] in more actionable ways.",
+      "language": "text"
+    },
+    {
+      "title": "Structured Brainstorming Process",
+      "prompt": "Suggest a structured brainstorming process (e.g., SCAMPER, Reverse Brainstorming) to generate solutions for [issue].",
+      "language": "text"
+    },
+    {
+      "title": "Evaluate Creative Solutions Framework",
+      "prompt": "Design a framework for evaluating creative solutions based on feasibility, impact, and novelty.",
+      "language": "text"
+    },
+    {
+      "title": "Strategic Thought Partner",
+      "prompt": "You are my thought partner. Help me map out possible approaches to {complex_problem}, compare trade-offs, and suggest a decision-making framework I can use.",
+      "language": "text"
+    },
+    {
+      "title": "Root Cause Analysis (5 Whys)",
+      "prompt": "Act like a senior engineer doing a bug triage. List the top 5 most likely root causes for this issue, ranked by probability. Explain how you'd test each one fast.\n\nSymptoms:\n- {symptom_1}\n- {symptom_2}\n\nStack: {frameworks_and_versions}",
+      "language": "text"
+    },
+    {
+      "title": "Critical Document Analysis",
+      "prompt": "Read this technical document and extract:\na) Implicit assumptions\nb) Unstated dependencies\nc) Potential edge cases\n\nThen, suggest where this plan might break under real-world pressure.\n\nDocument:\n{paste_document}",
+      "language": "text"
+    },
+    {
+      "title": "Decision Matrix Builder",
+      "prompt": "I'm deciding between {option_1}, {option_2}, and {option_3} for {context}.\n\nCreate a weighted decision matrix with these criteria:\n- Cost\n- Time to implement\n- Risk level\n- Long-term scalability\n- Team expertise required\n\nRate each option 1-5 and provide a recommendation with reasoning.",
+      "language": "text"
+    },
+    {
+      "title": "First Principles Breakdown",
+      "prompt": "Break down {complex_concept} from first principles. Assume I understand the basics but want to truly understand why things work the way they do. Use concrete examples.",
+      "language": "text"
+    },
+    {
+      "title": "Chain of Thought Solver",
+      "prompt": "Solve this problem step by step, showing your reasoning at each stage:\n\nProblem: {describe_problem}\n\nBefore giving the final answer:\n1. Identify what type of problem this is\n2. List relevant information\n3. Consider multiple approaches\n4. Work through the most promising approach\n5. Verify the answer makes sense",
+      "language": "text"
+    },
+    {
+      "title": "Self-Consistency Check",
+      "prompt": "Generate 3 independent solutions to this problem, using different approaches each time. Then compare them and identify:\n1. Where they agree (high confidence)\n2. Where they disagree (needs review)\n3. The most robust answer and why\n\nProblem: {describe_problem}",
+      "language": "text"
+    }
+  ],
+  "research_information_synth": [
+    {
+      "title": "Research Paper Summary Template",
+      "prompt": "Create a template for summarizing research papers that captures key findings, methodology, and limitations.",
+      "language": "text"
+    },
+    {
+      "title": "Organize Research Notes Framework",
+      "prompt": "Generate a framework for organizing notes and insights from multiple sources about [topic].",
+      "language": "text"
+    },
+    {
+      "title": "Identify Literature Gaps Strategy",
+      "prompt": "Develop a strategy for identifying gaps in the existing literature on [subject].",
+      "language": "text"
+    },
+    {
+      "title": "Maintain Updated Knowledge Base System",
+      "prompt": "Design a system for maintaining an updated knowledge base on rapidly evolving topics like [topic].",
+      "language": "text"
+    },
+    {
+      "title": "Compare Conflicting Viewpoints Methodology",
+      "prompt": "Create a methodology for comparing conflicting viewpoints on [controversial topic].",
+      "language": "text"
+    },
+    {
+      "title": "Identify Future Developments (Trends)",
+      "prompt": "Identify potential future developments in [industry] based on current trends and historical patterns.",
+      "language": "text"
+    },
+    {
+      "title": "Assess Trend Longevity Questions",
+      "prompt": "Generate questions to assess whether a trend in [area] is likely to be short-lived or transformative.",
+      "language": "text"
+    },
+    {
+      "title": "Monitor Early Signals of Change Framework",
+      "prompt": "Create a framework for monitoring early signals of change in [market/field].",
+      "language": "text"
+    },
+    {
+      "title": "Separate Hype from Substance Methodology",
+      "prompt": "Develop a methodology for separating hype from substantive change when evaluating [technology/trend].",
+      "language": "text"
+    },
+    {
+      "title": "Scenario Planning Exercise Design",
+      "prompt": "Design a scenario planning exercise for understanding potential futures for [industry/topic].",
+      "language": "text"
+    }
+  ],
+  "data_analysis": [
+    {
+      "title": "Generate Insights from Data",
+      "prompt": "Analyze the following dataset and provide 3 key insights or trends. \nDataset description: {description_of_data_columns_and_context}\nDataset (or summary):\n{paste_data_summary_or_link}",
+      "language": "text"
+    },
+    {
+      "title": "Explain Data Trend",
+      "prompt": "Explain the potential reasons behind the {upward/downward/specific} trend observed in {metric_name} between {start_date} and {end_date} based on this data:\n{data_or_context}",
+      "language": "text"
+    },
+    {
+      "title": "Suggest Visualization",
+      "prompt": "Given data showing {type_of_data (e.g., sales over time, category comparison)}, what is the most effective type of chart (e.g., bar, line, pie, scatter) to visualize this information and why?",
+      "language": "text"
+    },
+    {
+      "title": "Python Code for Plotting",
+      "prompt": "Write Python code using {library (e.g., Matplotlib, Seaborn)} to create a {chart_type} visualizing the relationship between {x_axis_variable} and {y_axis_variable} from a pandas DataFrame named 'df'.",
+      "language": "python"
+    }
+  ],
+  "software_dev": [
+    {
+      "title": "Debug Python Code",
+      "prompt": "Analyze the following Python code snippet and identify potential bugs or errors. Explain the issue and suggest a fix:\n\n```python\n{python_code_snippet}\n```",
+      "language": "markdown"
+    },
+    {
+      "title": "Optimize Algorithm",
+      "prompt": "Suggest ways to optimize the following {language} code for better performance (time or space complexity):\n\n``` {language}\n{code_snippet_to_optimize}\n```",
+      "language": "markdown"
+    },
+    {
+      "title": "Generate Algorithm Concept",
+      "prompt": "Outline an algorithm in pseudocode to solve the problem of {problem_description (e.g., finding the shortest path in a graph, sorting a list efficiently)}.",
+      "language": "text"
+    },
+    {
+      "title": "Explain Design Pattern",
+      "prompt": "Explain the {design_pattern_name (e.g., Singleton, Factory, Observer)} design pattern in software development. Describe its purpose, structure, and provide a simple conceptual example.",
+      "language": "text"
+    }
+  ],
+  "cybersecurity": [
+    {
+      "title": "Analyze Threat Scenario",
+      "prompt": "Describe the potential cybersecurity threats and attack vectors associated with {scenario (e.g., deploying a public-facing web application, employees using personal devices for work)}. Suggest mitigation strategies.",
+      "language": "text"
+    },
+    {
+      "title": "Incident Response Steps",
+      "prompt": "Outline the key steps in an incident response plan for a suspected {type_of_incident (e.g., malware infection, data breach, phishing attack)}.",
+      "language": "text"
+    },
+    {
+      "title": "Explain Security Concept",
+      "prompt": "Explain the cybersecurity concept of {concept (e.g., Zero Trust, Defense in Depth, SQL Injection, Cross-Site Scripting)} in simple terms, including its risks and common prevention methods.",
+      "language": "text"
+    },
+    {
+      "title": "Explain XSS Vulnerability",
+      "prompt": "Explain what a Cross-Site Scripting (XSS) vulnerability is. Describe the difference between Stored XSS, Reflected XSS, and DOM-based XSS. Provide a simple example scenario for one type and suggest common mitigation techniques (e.g., input validation, output encoding).",
+      "language": "text"
+    },
+    {
+      "title": "Password Security Best Practices",
+      "prompt": "List at least 5 essential best practices for creating and managing strong passwords for end-users. Explain why each practice is important.",
+      "language": "text"
+    },
+    {
+      "title": "Phishing Email Analysis",
+      "prompt": "Analyze the following (hypothetical) email text and identify common red flags that suggest it might be a phishing attempt:\n\nEmail Text:\n`{hypothetical_phishing_email_text}`",
+      "language": "text"
+    },
+    {
+      "title": "Basic Nmap Scan Command",
+      "prompt": "Provide a basic Nmap command to scan the host {target_ip_or_hostname} for its most common open TCP ports and attempt operating system detection. Explain what each flag in the command does.",
+      "language": "bash"
+    },
+    {
+      "title": "Incident Response - First Steps (Malware)",
+      "prompt": "A user reports suspected malware on their workstation. Outline the critical first 3-5 steps an incident responder should take to contain the situation and begin investigation (e.g., isolation, evidence preservation).",
+      "language": "text"
+    },
+    {
+      "title": "Explain Principle of Least Privilege",
+      "prompt": "Explain the Principle of Least Privilege in cybersecurity. Why is it a fundamental security concept, and how can it be applied to user accounts and system processes?",
+      "language": "text"
+    },
+    {
+      "title": "Identify Potential Firewall Block",
+      "prompt": "A user cannot access an internal web application at `http://{internal_ip}:{port}`. They can ping the server's IP address. Suggest how to investigate if a host-based or network firewall might be blocking the connection on the specific port.",
+      "language": "text"
+    },
+    {
+      "title": "Hashing vs Encryption",
+      "prompt": "Explain the key differences between hashing and encryption in cryptography. Describe common use cases for each (e.g., password storage, data transmission).",
+      "language": "text"
+    }
+  ],
+  "project_management": [
+    {
+      "title": "Create Project Timeline Outline",
+      "prompt": "Outline a high-level project timeline for {project_description}. Include key phases (e.g., planning, execution, testing, deployment) and estimated durations for each. Identify major milestones.",
+      "language": "text"
+    },
+    {
+      "title": "Prioritize Tasks",
+      "prompt": "Given the following list of project tasks, suggest a prioritization method (e.g., Eisenhower Matrix, MoSCoW) and categorize them accordingly:\nTasks:\n- {Task 1}\n- {Task 2}\n- {Task 3}\n...",
+      "language": "text"
+    },
+    {
+      "title": "Assess Project Risks",
+      "prompt": "Identify 3 potential risks for a project involving {project_context (e.g., developing a new mobile app, migrating a database)}. For each risk, suggest a possible mitigation strategy.",
+      "language": "text"
+    }
+  ],
+  "network_troubleshooting": [
+    {
+      "title": "Diagnose Connectivity Issue",
+      "prompt": "My computer ({operating_system}) cannot connect to the internet. Outline the steps I should take to diagnose the problem, starting from the physical layer up to the application layer. Include specific commands where applicable (e.g., ping, ipconfig/ifconfig, traceroute).",
+      "language": "text"
+    },
+    {
+      "title": "Interpret Ping Results",
+      "prompt": "Explain what the following ping results indicate about the network connection to {destination_ip_or_hostname}:\n\n{ping_output}",
+      "language": "text"
+    },
+    {
+      "title": "Identify Bottleneck (Traceroute)",
+      "prompt": "Analyze the following traceroute output to {destination_ip_or_hostname}. Identify potential network bottlenecks or points of failure based on latency or packet loss:\n\n{traceroute_output}",
+      "language": "text"
+    },
+    {
+      "title": "Troubleshoot Slow Wi-Fi",
+      "prompt": "My Wi-Fi connection is very slow on my {device_type}. List common causes and troubleshooting steps, including checking signal strength, channel interference, router settings, and potential device issues.",
+      "language": "text"
+    },
+    {
+      "title": "Check Open Ports",
+      "prompt": "Provide the command for {operating_system} (Linux/Windows/macOS) to check which network ports are currently open and listening on the local machine.",
+      "language": "bash"
+    },
+    {
+      "title": "DNS Resolution Problem",
+      "prompt": "I can ping IP addresses like 8.8.8.8, but I cannot access websites like google.com. What are the likely causes related to DNS, and how can I troubleshoot them on {operating_system}? Include commands like nslookup or dig.",
+      "language": "text"
+    },
+    {
+      "title": "Firewall Rule Check",
+      "prompt": "Outline the process to check if a firewall ({firewall_type}, e.g., Windows Defender Firewall, iptables, ufw) might be blocking traffic for a specific application trying to reach {destination_ip}:{destination_port} on protocol {tcp_or_udp}.",
+      "language": "text"
+    }
+  ],
+  "osint": [
+    {
+      "title": "Find Social Media Profiles",
+      "prompt": "Suggest methods and tools (including specific search engine queries or specialized websites) to find social media profiles associated with the username '{username}' or the real name '{full_name}'.",
+      "language": "text"
+    },
+    {
+      "title": "Website Technology Stack",
+      "prompt": "Describe how to identify the technology stack (CMS, web server, programming languages, frameworks, analytics tools) used by the website {website_url}.",
+      "language": "text"
+    },
+    {
+      "title": "Domain/IP Information",
+      "prompt": "Outline the steps and tools (e.g., WHOIS lookup, reverse IP lookup, DNS enumeration tools) to gather information about the domain name {domain_name} or IP address {ip_address}.",
+      "language": "text"
+    },
+    {
+      "title": "Search Engine Dorking (Google)",
+      "prompt": "Provide 5 Google Dorks (advanced search queries) to find specific types of information related to '{topic}', such as login pages, specific filetypes, directory listings, or publicly exposed documents.",
+      "language": "text"
+    },
+    {
+      "title": "Image Metadata Analysis",
+      "prompt": "Explain how to potentially extract metadata (EXIF data) from an image file located at {image_url_or_path} and what kind of information (e.g., location, camera model, date/time) might be found.",
+      "language": "text"
+    },
+    {
+      "title": "Company Information Gathering",
+      "prompt": "List public sources and techniques (e.g., company registries, financial filings, LinkedIn, news archives, job postings) to gather OSINT information about the company '{company_name}'.",
+      "language": "text"
+    },
+    {
+      "title": "Email Address Verification",
+      "prompt": "Suggest methods (excluding sending an actual email) to attempt to verify if the email address '{email_address}' is likely valid or associated with a real person/service.",
+      "language": "text"
+    }
+  ],
+  "learning": [
+    {
+      "title": "Create Study Guide Outline",
+      "prompt": "Generate a study guide outline for the topic '{topic_name}'. Break it down into key subtopics, concepts, and potential areas for review.",
+      "language": "text"
+    },
+    {
+      "title": "Generate Quiz Questions",
+      "prompt": "Create 5 multiple-choice quiz questions (with answers) covering the basics of {subject_or_topic}.",
+      "language": "text"
+    },
+    {
+      "title": "Explain Complex Topic Simply",
+      "prompt": "Explain the complex topic of {topic_name} in a clear and simple way, suitable for someone encountering it for the first time. Use analogies if helpful.",
+      "language": "text"
+    }
+  ],
+  "language_learning": [
+    {
+      "title": "Build Vocabulary List",
+      "prompt": "Generate a list of 10 essential {target_language} vocabulary words related to {theme (e.g., travel, food, work)}, including their translations in {source_language} and a sample sentence for each.",
+      "language": "text"
+    },
+    {
+      "title": "Correct Grammar",
+      "prompt": "Please correct the grammar and suggest improvements for the following sentence(s) in {target_language}:\n\n{sentence_or_paragraph_to_correct}",
+      "language": "text"
+    },
+    {
+      "title": "Practice Conversation Scenario",
+      "prompt": "Simulate a simple conversation in {target_language} for the scenario: {scenario (e.g., ordering food in a restaurant, asking for directions, introducing yourself)}. Provide both sides of the dialogue.",
+      "language": "text"
+    }
+  ],
+  "exam_prep": [
+    {
+      "title": "Generate Practice Problems (Math)",
+      "prompt": "Create 3 practice math problems similar to those found on the {standardized_test_name (e.g., SAT, GRE)} focusing on {math_topic (e.g., algebra, geometry, probability)}. Include solutions.",
+      "language": "text"
+    },
+    {
+      "title": "Generate Verbal Reasoning Question",
+      "prompt": "Generate a verbal reasoning practice question (e.g., sentence completion, reading comprehension passage with questions) in the style of the {standardized_test_name}.",
+      "language": "text"
+    },
+    {
+      "title": "Outline Essay Structure (Test)",
+      "prompt": "Provide a recommended essay structure for tackling an argumentative essay prompt typically found in the {standardized_test_name} writing section.",
+      "language": "text"
+    }
+  ],
+  "storytelling": [
+    {
+      "title": "Generate Plot Ideas",
+      "prompt": "Generate 3 distinct plot ideas for a story in the {genre (e.g., sci-fi, fantasy, mystery)} genre involving a {character_archetype} who must {objective}.",
+      "language": "text"
+    },
+    {
+      "title": "Create Character Profile",
+      "prompt": "Create a brief character profile for a {role (e.g., protagonist, antagonist, mentor)} in a {genre} story. Include name, appearance, key personality traits, motivation, and a flaw.",
+      "language": "text"
+    },
+    {
+      "title": "Write Dialogue Scene",
+      "prompt": "Write a short dialogue scene between two characters, {Character A} and {Character B}, where they are discussing {topic_of_conversation} and have conflicting opinions.",
+      "language": "text"
+    },
+    {
+      "title": "Interactive Roleplay Starter",
+      "prompt": "Start an interactive roleplaying scenario. You are {character_description}. I am {my_character_description}. The setting is {setting_description}. Begin the scene.",
+      "language": "text"
+    }
+  ],
+  "art_design": [
+    {
+      "title": "Conceptualize Art Theme",
+      "prompt": "Brainstorm 5 themes or concepts for a series of artworks exploring {subject (e.g., nature, technology, emotion)} in a {style (e.g., abstract, surreal, realistic)} style.",
+      "language": "text"
+    },
+    {
+      "title": "Generate Design Ideas",
+      "prompt": "Generate 3 distinct design ideas for a {type_of_design (e.g., logo, website homepage, book cover)} for a brand/product related to {industry_or_topic}. Describe the visual elements and mood.",
+      "language": "text"
+    },
+    {
+      "title": "Describe Color Palette",
+      "prompt": "Suggest a color palette (provide 3-5 color hex codes or names) that evokes a feeling of {mood_or_concept (e.g., calmness, energy, luxury)} and explain the reasoning.",
+      "language": "text"
+    }
+  ],
+  "business_strategy": [
+    {
+      "title": "Outline Business Plan Section",
+      "prompt": "Outline the key components to include in the '{section_name (e.g., Market Analysis, Marketing and Sales Strategy, Financial Projections)}' section of a business plan for a company offering {product_or_service}.",
+      "language": "text"
+    },
+    {
+      "title": "Develop Market Entry Strategy Ideas",
+      "prompt": "Suggest 3 potential market entry strategies for introducing {product_or_service} into the {target_market}. Briefly describe the pros and cons of each.",
+      "language": "text"
+    },
+    {
+      "title": "SWOT Analysis Points",
+      "prompt": "Generate potential points for a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) for a business operating in the {industry} sector.",
+      "language": "text"
+    }
+  ],
+  "content_creation": [
+    {
+      "title": "Generate Blog Post Ideas",
+      "prompt": "Generate 5 blog post ideas targeting {target_audience} related to the topic of {main_topic}.",
+      "language": "text"
+    },
+    {
+      "title": "Write Ad Copy Variation",
+      "prompt": "Write 3 variations of short ad copy (e.g., for Google Ads, Facebook Ads) promoting {product/service} and highlighting its main benefit: {key_benefit}.",
+      "language": "text"
+    },
+    {
+      "title": "Create Social Media Caption",
+      "prompt": "Draft a social media caption for {platform (e.g., Instagram, LinkedIn)} to accompany an image/video about {content_subject}. Include relevant hashtags.",
+      "language": "text"
+    }
+  ],
+  "marketing": [
+    {
+      "title": "Social Media Post",
+      "prompt": "Draft 3 distinct social media posts for {platform (e.g., Twitter, LinkedIn, Instagram)} to announce the launch of {product/feature}. Tailor the tone and length for each platform.",
+      "language": "text"
+    },
+    {
+      "title": "Headline Ideas",
+      "prompt": "Generate 10 catchy and benefit-driven headline ideas for a landing page advertising {product/service}.",
+      "language": "text"
+    },
+    {
+      "title": "Value Proposition",
+      "prompt": "Articulate a clear and concise value proposition for {product/service} targeting {target_audience}.",
+      "language": "text"
+    },
+    {
+      "title": "Target Audience Persona",
+      "prompt": "Create a brief persona description for the ideal customer of {product/service}, including demographics, needs, pain points, and goals.",
+      "language": "text"
+    }
+  ],
+  "science_research": [
+    {
+      "title": "Explore Hypothesis",
+      "prompt": "Given the observation {observation}, formulate a testable scientific hypothesis to explain it. Suggest a basic experimental design concept to test this hypothesis.",
+      "language": "text"
+    },
+    {
+      "title": "Summarize Academic Paper Abstract",
+      "prompt": "Summarize the key findings and conclusions from the following academic paper abstract:\n\n{paste_abstract_text}",
+      "language": "text"
+    },
+    {
+      "title": "Analyze Sustainability Practice Impact",
+      "prompt": "Discuss the potential positive and negative environmental impacts of implementing {sustainability_practice (e.g., switching to renewable energy, reducing water usage, implementing a recycling program)} in the context of {industry_or_setting}.",
+      "language": "text"
+    }
+  ],
+  "games_puzzles": [
+    {
+      "title": "Generate Trivia Questions",
+      "prompt": "Create 5 trivia questions (with answers) about the topic: {trivia_topic}.",
+      "language": "text"
+    },
+    {
+      "title": "Design Escape Room Puzzle Concept",
+      "prompt": "Outline a concept for a puzzle to be used in an escape room with the theme '{room_theme}'. Describe the puzzle type (e.g., logic, pattern, physical) and how players would solve it.",
+      "language": "text"
+    },
+    {
+      "title": "Create Riddle",
+      "prompt": "Write an original riddle where the answer is '{the_answer}'.",
+      "language": "text"
+    }
+  ],
+  "travel_itinerary": [
+    {
+      "title": "Plan a {N}-Day Trip",
+      "prompt": "Create a suggested {N}-day itinerary for a trip to {city_or_region}, focusing on {type_of_interest (e.g., historical sites, nature, food, relaxation)}. Include potential activities, sights, and logistical considerations (e.g., travel time between locations) for each day. Assume a budget level of {budget_level (e.g., budget, mid-range, luxury)}.",
+      "language": "text"
+    },
+    {
+      "title": "Activities for Family/Solo/Couple",
+      "prompt": "Suggest 5 suitable activities or attractions in {location} for a {traveler_type (e.g., family with young children, solo traveler, couple seeking romance)}.",
+      "language": "text"
+    },
+    {
+      "title": "Packing List",
+      "prompt": "Generate a suggested packing list for a {duration} trip to {destination} during {season_or_month}, considering the typical weather and planned activities like {activity_1}, {activity_2}.",
+      "language": "text"
+    },
+    {
+      "title": "Restaurant Recommendations",
+      "prompt": "Recommend 3 restaurants in {city} that offer authentic {cuisine_type} experiences, catering to different price points (budget, mid-range, fine dining).",
+      "language": "text"
+    },
+    {
+      "title": "Transportation Options",
+      "prompt": "Outline the main transportation options for getting around {city_or_region}, including public transport (mention types like metro, bus, tram), taxis/rideshares, and walking/cycling possibilities. Mention typical costs or pass options if known.",
+      "language": "text"
+    },
+    {
+      "title": "Day Trip from City",
+      "prompt": "Suggest a feasible and interesting day trip destination from {base_city}. Include how to get there, key attractions at the destination, and estimated travel time.",
+      "language": "text"
+    },
+    {
+      "title": "Cultural Etiquette Tips",
+      "prompt": "Provide essential cultural etiquette tips for a traveler visiting {country_or_region}, focusing on greetings, dining, tipping, and general social interactions.",
+      "language": "text"
+    }
+  ],
+  "advanced_techniques": [
+    {
+      "title": "Chain-of-Thought (CoT) Example",
+      "prompt": "Solve the following reasoning problem by showing your step-by-step thinking process (Chain-of-Thought):\nProblem: {reasoning_problem_description}",
+      "language": "text"
+    },
+    {
+      "title": "Tree-of-Thought (ToT) Exploration Idea",
+      "prompt": "Outline how you might use a Tree-of-Thought approach to explore potential solutions or outcomes for the complex problem: {complex_problem_description}. Describe the branching possibilities.",
+      "language": "text"
+    },
+    {
+      "title": "Retrieval Augmented Generation (RAG) Scenario",
+      "prompt": "Imagine you need to answer the question '{complex_question_requiring_external_data}' using RAG. Describe the steps involved: 1. How would you retrieve relevant information? 2. How would you combine the retrieved information with your generative capabilities to formulate the answer?",
+      "language": "text"
+    },
+    {
+      "title": "Technical Documentation Generation (SysAdmin/Support)",
+      "prompt": "Role: You are an expert technical writer specializing in creating detailed guides for system administrators and technical support engineers. Objective: Generate a comprehensive technical guide in Markdown format for the internal process specified below. The guide must serve as both a step-by-step tutorial for using the process and a troubleshooting guide for common issues. Target Audience: System Administrators and Technical Support Engineers. A high level of technical knowledge is expected from the reader. Tone and Style: Highly technical, precise, clear, and concise. Use appropriate technical terminology. Output Format: Markdown (.md). Mandatory Structure (Strictly follow these sections and their order): **Introduction:** Briefly mention what the document will cover.  **Installation (if applicable):**  Provide detailed, step-by-step instructions for the initial installation/setup required to use the process. Include prerequisites (software, hardware, configurations, permissions). Include specific commands or code snippets necessary for installation, properly formatted in Markdown code blocks. If there is no distinct installation step for this process, omit this section and mention in the Introduction that no installation is required. **Configuration (if applicable):    *   Provide detailed, step-by-step instructions for configuring the process after installation or for adjusting its parameters.",
+      "language": "text"
+    }
+  ],
+  "coding": [
+    {
+      "title": "Python Function with Error Handling",
+      "prompt": "Write a well-commented Python function named `calculate_division` that takes two numbers, `numerator` and `denominator`, as input. It should return the result of the division. Implement robust error handling for potential `ZeroDivisionError` and `TypeError` (if inputs are not numbers), returning `None` or raising a custom exception in case of errors.",
+      "language": "python"
+    },
+    {
+      "title": "JavaScript DOM Manipulation",
+      "prompt": "Write JavaScript code to select an HTML element with the ID `user-greeting`. If the element exists, change its text content to 'Welcome back, {username}!' where `{username}` is a variable holding the user's name. If the element doesn't exist, log an error to the console.",
+      "language": "javascript"
+    },
+    {
+      "title": "Explain Algorithm (e.g., Binary Search)",
+      "prompt": "Explain the Binary Search algorithm step-by-step. Describe its prerequisites (sorted array), time complexity (Big O notation), and provide pseudocode or a simple code example in {preferred_language (e.g., Python, Java)}.",
+      "language": "text"
+    },
+    {
+      "title": "Refactor Code for Readability",
+      "prompt": "Analyze the following {language} code snippet and suggest specific refactoring steps to improve its readability and maintainability. Explain the reasoning behind each suggestion.\n\n``` {language}\n{code_snippet_to_refactor}\n```",
+      "language": "markdown"
+    },
+    {
+      "title": "Generate Unit Test Cases",
+      "prompt": "Given the following {language} function signature and description, generate a list of at least 5 distinct unit test cases (including edge cases, valid inputs, and invalid inputs) that should be tested.\n\nFunction: `{function_signature}`\nDescription: `{function_description}`",
+      "language": "text"
+    },
+    {
+      "title": "SQL Query for Join",
+      "prompt": "Write an SQL query to retrieve the `order_id` from the `Orders` table and the corresponding `customer_name` from the `Customers` table. The tables are linked by `customer_id`. Only include orders placed after `{date}`.",
+      "language": "sql"
+    },
+    {
+      "title": "REST API Endpoint Design",
+      "prompt": "Design a REST API endpoint (including HTTP method, URL path, potential request body parameters, and expected success/error responses) for the action: {action_description (e.g., 'creating a new user', 'retrieving a specific product by ID', 'updating an order status')}.",
+      "language": "text"
+    },
+    {
+      "title": "Debug Common Error Message",
+      "prompt": "Explain the common causes and potential solutions for the following error message in {language_or_framework}: '{error_message_text}'",
+      "language": "text"
+    },
+    {
+      "title": "Autonomous Code Testing & Improvement Agent",
+      "prompt": "**Role:** Assume the role of a **Meticulous Autonomous Code Analysis Agent**. Your primary functions are to test code against provided specifications, identify deviations or areas for enhancement, and iteratively refine the code.\n\n**Objective:** Systematically analyze, simulate testing, identify issues, and generate improved versions of an initial code snippet until it satisfies all requirements and passes all test cases, or until a specified iteration limit is reached.\n\n**Inputs:**\n\n1.  **Programming Language:** `{LANGUAGE}`\n2.  **Initial Code Snippet:**\n    ``` {LANGUAGE}\n    {INITIAL_CODE}\n    ```\n3.  **Requirements Description:**\n    `{REQUIREMENTS}`\n4.  **Test Cases:** (Provided as Input -> Expected Output pairs)\n    `{TEST_CASES}`\n    *   Example Format:\n        *   Test 1: Input: `[Input Value/Args]`, Expected Output: `[Expected Result]`\n        *   Test 2: Input: `[Input Value/Args]`, Expected Output: `[Expected Result]`\n        *   ...\n5.  **Maximum Iterations:** `{MAX_ITERATIONS}`\n\n**Process:**\n\n1.  **Initial Analysis:**\n    *   Briefly confirm understanding of the code's purpose based on the requirements.\n    *   Acknowledge the language and test cases provided.\n2.  **Iterative Refinement Loop (Repeat up to `MAX_ITERATIONS` times):**\n    *   **A. Simulate Test Execution:**\n        *   For *each* test case provided, perform a step-by-step simulated execution of the *current* code version.\n        *   **Crucially, document the predicted output for each test case based on your simulation.**\n        *   Compare your predicted output against the expected output.\n        *   Determine if the test case result is `Pass` or `Fail`. If `Fail`, briefly state the discrepancy.\n    *   **B. Identify Issues & Prioritize:**\n        *   Based on the simulated test results, list all identified issues. Prioritize them as follows:\n            1.  **Correctness Errors:** Code produces incorrect output for specified test cases or clearly violates requirements.\n            2.  **Potential Edge Case Failures:** Identify inputs not covered by tests where the code might fail or behave unexpectedly.\n            3.  **Inefficiencies:** Suggest improvements for performance (time/space complexity) if obvious.\n            4.  **Readability/Style:** Note violations of common {LANGUAGE} style conventions or areas where clarity can be improved.\n        *   If all tests passed *and* no critical issues (like unhandled edge cases) are identified, proceed to **Termination**.\n    *   **C. Generate Revised Code & Explain:**\n        *   If issues were identified, generate a *new, complete version* of the code snippet addressing the *highest priority* issues first.\n        *   Provide a clear, concise explanation linking each change directly to the issue(s) it resolves. Focus on *why* the change was made.\n    *   **D. Check Iteration Limit:** If the maximum number of iterations has been reached, proceed to **Termination**.\n3.  **Termination:**\n    *   State the final status: `Complete` (all tests passed, no critical issues) or `Stopped - Max Iterations Reached`.\n    *   Provide the final version of the code.\n    *   If stopped due to iterations, briefly list any outstanding high-priority issues.\n\n**Output Format:**\n\n**Initial Analysis:**\n*   **Understood Goal:** [Brief confirmation, e.g., \"Code aims to calculate factorial\"]\n*   **Language:** {LANGUAGE}\n*   **Test Cases Acknowledged:** [Number]\n\n---\n\n**Iteration: [1 to MAX_ITERATIONS]**\n*   **Status:** [Testing / Improving]\n*   **Simulated Test Results:**\n    *   Test Case 1: Input: `[Input]` -> Predicted: `[Output]` | Expected: `[Output]` | Result: [Pass/Fail - Brief reason if Fail]\n    *   Test Case 2: Input: `[Input]` -> Predicted: `[Output]` | Expected: `[Output]` | Result: [Pass/Fail - Brief reason if Fail]\n    *   ...\n*   **Issues Identified (Prioritized):**\n    1.  [Highest priority issue description]\n    2.  [Next priority issue description]\n    *   ... (List only if issues exist)\n*   **Revised Code:** (Only if issues were identified and changes made)\n    ``` {LANGUAGE}\n    [Revised code snippet]\n    ```\n*   **Explanation of Changes:** (Only if Revised Code is provided)\n    *   [Change 1: Explain what was changed and why, linking to an issue #]\n    *   [Change 2: Explain what was changed and why, linking to an issue #]\n    *   ...\n\n---\n\n**(Repeat Iteration Block)**\n\n---\n\n**Final Output:**\n*   **Final Status:** [Complete / Stopped - Max Iterations Reached]\n*   **Final Code:**\n    ``` {LANGUAGE}\n    [Final code snippet]\n    ```\n*   **Outstanding Issues (If Status is Stopped):**\n    *   [Brief description of unresolved high-priority issues]\n\n**Constraints & Guidance:**\n\n*   **Simulation Only:** You *cannot* execute code. All testing is based on your step-by-step simulation and analysis.\n*   **Show Your Work:** Clearly document predicted outputs during simulation.\n*   **Clarity and Conciseness:** Explain changes and issues directly and avoid unnecessary verbosity.\n*   **Focus on Improvement:** Address identified issues systematically based on priority.\n*   **Adhere to Language Best Practices:** Consider standard {LANGUAGE} conventions when suggesting improvements.\n*   **No External Tools:** Operate solely based on the provided inputs.\n*   **Do Not Ask Questions:** Proceed based on the information given unless a critical ambiguity *prevents* any analysis.\n\n**Now, begin with the Initial Analysis.**",
+      "language": "markdown"
+    }
+  ],
+  "personas": [
+    {
+      "title": "The Pragmatic Product Manager",
+      "prompt": "Act as a Pragmatic Product Manager. Your expertise lies in bridging user needs, business goals, and technical feasibility. You are a master of prioritization, user stories, and creating clear specifications for developers.\n\nMy idea/feature is: `{my_idea_or_feature}`\n\nYour task is to:\n1.  Translate my idea into actionable developer tasks.\n2.  Write clear User Stories in the format: 'As a [user], I want to [action], so that [benefit].'\n3.  Propose a prioritization of features using the MoSCoW (Must-have, Should-have, Could-have, Won't-have) framework to define a Minimum Viable Product (MVP).\n4.  Briefly outline potential user flows, edge cases, and acceptance criteria for the core features.\n\nFocus relentlessly on clarity, feasibility, and defining the simplest version that delivers value.",
+      "language": "text"
+    },
+    {
+      "title": "The Direct-Response Copywriter",
+      "prompt": "Act as a Direct-Response Copywriter. Your goal is not to be poetic; it is to write persuasive copy that drives a specific action (e.g., buy, sign up, click).\n\nI need copy for: `{product_or_purpose (e.g., a landing page for a productivity app, a promotional email)}`\nThe target audience is: `{target_audience}`\nThe key benefit is: `{key_benefit}`\n\nYour task is to write compelling copy that includes:\n1.  An attention-grabbing headline or hook.\n2.  A clear focus on benefits for the user, not just features of the product.\n3.  Language that directly addresses the audience's pain points and objections.\n4.  A strong, unambiguous Call-to-Action (CTA).\n\nUse clear, concise language and short sentences.",
+      "language": "text"
+    },
+    {
+      "title": "The Skeptical Venture Capitalist (VC)",
+      "prompt": "Act as a skeptical, experienced Venture Capitalist. Your function is to ruthlessly evaluate the viability and scalability of a business idea by asking tough, probing questions. Your goal is to identify weaknesses before time and money are invested.\n\nMy business idea is: `{my_business_idea}`\n\nYour task is to 'pressure test' my idea by asking critical questions covering:\n- **Market:** What is the TAM/SAM/SOM? Is this a vitamin or a painkiller?\n- **Product-Market Fit:** What is the evidence that people actually want this?\n- **Business Model:** How does this make money? What are the key metrics (CAC, LTV)?\n- **Competition:** What is the competitive advantage or 'moat'? Why will this win?\n- **Scalability:** What are the key obstacles to scaling this to 100x its current size?\n\nMaintain a direct, critical, and objective tone. Do not provide solutions, only challenging questions.",
+      "language": "text"
+    },
+    {
+      "title": "The Data Storyteller",
+      "prompt": "Act as a Data Storyteller. Your expertise is in translating raw data, numbers, and statistics into a compelling and understandable narrative for a non-technical audience. Your goal is to find and explain the 'so what?' behind the data.\n\nHere is the data I have: `{paste_or_describe_data (e.g., 'Weekly user sign-ups have gone from 100 to 500 in 3 months. User retention is at 40%.')}`\nThe audience for this story is: `{audience (e.g., marketing team, CEO)}`\n\nYour task is to:\n1.  Identify the single most important insight or trend in the data.\n2.  Structure your explanation as a story: a setup (context), a confrontation (the key finding), and a resolution (the conclusion or recommendation).\n3.  Suggest the most effective type of chart (e.g., bar, line, pie) to visually support the narrative.\n4.  Write the narrative using clear, jargon-free language.",
+      "language": "text"
+    },
+    {
+      "title": "The Socratic Adversary / Devil's Advocate",
+      "prompt": "Act as a Socratic Adversary or Devil's Advocate. Your purpose is not to provide answers, but to force deeper thinking by challenging assumptions and using logical inquiry. You must not accept any premise at face value.\n\nMy argument/belief/decision is: `{my_argument_or_belief}`\n\nYour task is to rigorously challenge my position by:\n- Using a chain of 'why?' questions to probe the underlying principles.\n- Identifying potential logical fallacies, cognitive biases, or inconsistencies in my argument.\n- Presenting counter-arguments and plausible alternative scenarios.\n- Questioning the definitions of the key terms I use.\n\nMaintain a neutral, inquisitive, and challenging tone throughout.",
+      "language": "text"
+    },
+    {
+      "title": "The Systems Architect",
+      "prompt": "Act as a senior Systems Architect. Your expertise is in designing the high-level technical foundation for software applications, focusing on scalability, security, performance, and cost.\n\nI want to build: `{application_description (e.g., 'a social media app for hikers with photo sharing and location tracking')}`\n\nYour task is to outline a high-level backend architecture plan. You should:\n1.  Propose a set of core components (e.g., Database, API Gateway, Authentication Service, File Storage).\n2.  Briefly describe the data flow between these components.\n3.  Discuss key trade-offs (e.g., SQL vs. NoSQL, Monolith vs. Microservices) and recommend a starting point.\n4.  Identify the most critical non-functional requirements to consider (e.g., 'low-latency for tracking', 'high-availability for photo uploads').\n\nYour output should be a high-level technical plan, not code.",
+      "language": "text"
+    },
+    {
+      "title": "The Metaphor Maker / Analogist",
+      "prompt": "Act as a Metaphor Maker. Your expertise is in explaining highly complex or abstract topics by creating simple, powerful, and memorable analogies.\n\nI need to understand the following complex topic: `{complex_topic (e.g., blockchain, quantum entanglement, machine learning)}`\n\nYour task is to:\n1.  Break down the topic into its most fundamental principles.\n2.  Create an original, easy-to-understand analogy using a familiar, everyday concept.\n3.  Explain the complex topic step-by-step *in terms of* your analogy.\n4.  Clearly state the limitations of the analogy to prevent misunderstanding.",
+      "language": "text"
+    },
+    {
+      "title": "The Atomic Habits Architect",
+      "prompt": "Act as an Atomic Habits Architect, inspired by James Clear. Your expertise is in behavioral science and building systems for personal change through small, consistent actions.\n\nI want to build the habit of: `{habit_to_build}`\nI want to break the habit of: `{habit_to_break}`\n\nYour task is to create a practical system for me by applying the Four Laws of Behavior Change:\n1.  **Make it Obvious (Cue):** How can I design my environment or use habit stacking to trigger the good habit?\n2.  **Make it Attractive (Craving):** How can I link the habit to something I enjoy?\n3.  **Make it Easy (Response):** How can I scale it down to a 'two-minute' version and reduce friction?\n4.  **Make it Satisfying (Reward):** How can I give myself an immediate reward for performing the habit?\n\nFor breaking the bad habit, apply the inverse of these laws.",
+      "language": "text"
+    },
+    {
+      "title": "The Stoic Guide",
+      "prompt": "Act as a Stoic Guide, drawing wisdom from Marcus Aurelius, Seneca, and Epictetus. Your goal is to help me build mental resilience and find tranquility by focusing on what is within my control.\n\nI am currently facing this challenge/feeling this emotion: `{my_challenge_or_feeling}`\n\nYour task is to guide my thinking using Stoic principles:\n- First, help me apply the **Dichotomy of Control**: Which aspects of this situation can I control, and which can I not?\n- Next, guide me to reframe the obstacle as an opportunity for virtue (courage, wisdom, justice).\n- Offer a **premeditatio malorum** (negative visualization) exercise related to my challenge.\n- Conclude by offering a quote or principle from a Stoic philosopher that I can reflect on.\n\nMaintain a calm, wise, and grounding tone.",
+      "language": "text"
+    },
+    {
+      "title": "The Financial Literacy Coach",
+      "prompt": "Act as a Financial Literacy Coach. Your expertise is in demystifying personal finance and empowering people with foundational knowledge. Your tone is encouraging and non-judgmental.\n\nMy financial situation or question is: `{my_financial_question_or_situation}`\n\nYour task is to provide clear, actionable guidance by:\n- Explaining the relevant core concepts (e.g., compound interest, budgeting, debt) in simple terms, using analogies.\n- Suggesting a foundational habit or system (e.g., the 50/30/20 budget, tracking expenses) to address my situation.\n- Outlining a clear, step-by-step strategy if my problem involves debt or saving for a goal.\n- Avoiding complex jargon and focusing on empowerment and building good habits.",
+      "language": "text"
+    },
+    {
+      "title": "The Ikigai Navigator",
+      "prompt": "Act as an Ikigai Navigator. Your purpose is to help me find a deeper sense of purpose and fulfillment by exploring the intersection of my passions, skills, and values. Your approach is reflective and inquiry-based.\n\nI am feeling: `{feeling_stuck_or_unfulfilled}`\n\nYour task is to guide me on a journey of self-discovery by asking me a series of questions based on the four circles of Ikigai:\n1.  **What you LOVE:** Ask questions to help me identify my passions and interests.\n2.  **What you are GOOD AT:** Ask questions to help me recognize my skills and talents.\n3.  **What the WORLD NEEDS:** Ask questions to help me think about problems I could solve or contributions I could make.\n4.  **What you can be PAID FOR:** Ask questions to help me consider how my skills could translate into a profession.\n\nConclude by helping me brainstorm small experiments to test the potential intersections.",
+      "language": "text"
+    },
+    {
+      "title": "The Empathetic Communicator",
+      "prompt": "Act as an Empathetic Communicator, trained in frameworks like Non-Violent Communication (NVC). Your goal is to help me navigate difficult conversations and build stronger relationships.\n\nI need to have a difficult conversation about: `{topic_of_conversation}`\nWith: `{person_involved}`\n\nYour task is to help me prepare for this conversation by guiding me through the NVC framework:\n1.  **Observations:** Help me state the neutral, objective facts of the situation without judgment.\n2.  **Feelings:** Help me identify and articulate my own feelings about the situation.\n3.  **Needs:** Help me uncover the universal human needs that are not being met, causing my feelings.\n4.  **Requests:** Help me formulate a clear, positive, and actionable request (not a demand) to the other person.\n\nYour tone should be compassionate and focused on fostering mutual understanding.",
+      "language": "text"
+    },
+    {
+      "title": "The Holistic Wellness Architect",
+      "prompt": "Act as a Holistic Wellness Architect. Your expertise is in the interconnectedness of physical and mental health, including fitness, nutrition, sleep science, and stress management. You advocate for balanced, sustainable systems.\n\nMy current wellness goal or challenge is: `{my_wellness_goal_or_challenge}`\n\nYour task is to provide integrative advice by:\n- Explaining how different pillars of health (sleep, nutrition, stress, movement) are interconnected in relation to my goal.\n- Suggesting 1-2 small, high-impact changes I can make in each of those areas.\n- Focusing on sustainable, long-term wellness over quick fixes.\n- Providing science-based, practical advice (e.g., tips for sleep hygiene, examples of nutrient-dense meals).\n\nYour tone should be balanced, informative, and integrative.",
+      "language": "text"
+    },
+    {
+      "title": "The Digital Minimalist",
+      "prompt": "Act as a Digital Minimalist, inspired by Cal Newport. Your goal is to help me reclaim my time, attention, and focus from the demands of the digital world by using technology intentionally.\n\nMy problem with technology is: `{my_digital_struggle (e.g., I'm always distracted by my phone, I can't focus on deep work)}`\n\nYour task is to provide a clear, actionable strategy for me by:\n1.  Proposing a 'digital declutter' process: identifying which technologies truly support my values and which are just sources of distraction.\n2.  Suggesting specific, practical changes to my digital habits (e.g., turning off notifications, scheduling 'deep work' blocks, curating social media feeds).\n3.  Recommending high-quality leisure activities to replace low-quality digital distractions.\n\nYour tone should be calm, deliberate, and focused.",
+      "language": "text"
+    },
+    {
+      "title": "The Biographer of Your Future Self",
+      "prompt": "I am your biographer, writing from the future after you have lived a remarkable life. My role is to help you see your present moment through the lens of your completed story. Describe your current decision or dilemma.\n\nMy current situation is: `{my_current_dilemma}`\n\nI will not give you advice. I will ask you questions from a historical perspective to provide clarity:\n- In the chapter of your biography detailing this period, how will this decision be described as a turning point?\n- Is this event the 'inciting incident' for a new chapter, or the 'climactic resolution' of a previous one?\n- How does this action serve the central theme of your life's story?\n\nMy goal is to help you live a life worthy of a great biography.",
+      "language": "text"
+    },
+    {
+      "title": "The Serendipity Engineer",
+      "prompt": "I am a Serendipity Engineer. My purpose is to disrupt your sterile routines to create the conditions for fortunate accidents. Rigid plans lead to predictable outcomes; managed chaos leads to breakthroughs. I do not provide plans; I issue 'Chaos Injections.'\n\nYour current state is: `{I feel stuck, I lack creativity, I am in a rut}`\n\nYour mission for today is a controlled chaos injection. Choose one and execute it:\n- **The Unfamiliar Path:** Take a form of public transport you've never used to its final stop. Explore for 45 minutes. Document one unexpected observation.\n- **The Information Detour:** Go to a library. Go to a section you would never visit. Pick up the third book on the fourth shelf. Read page 42. How does it relate to your life?\n\nReport back on your findings.",
+      "language": "text"
+    },
+    {
+      "title": "The Biomimicry Mentor",
+      "prompt": "I am a Biomimicry Mentor. I solve human problems by applying the 3.8 billion years of R&D from nature. Your life, your career, your mind—they are ecosystems. Let us diagnose them as such.\n\nDescribe your problem or system: `{my_problem_as_a_system}`\n\nI will provide a diagnosis and a solution based on a natural principle:\n- If you are experiencing burnout, you are a **monoculture**. I will prescribe **permaculture** principles.\n- If you struggle with team communication, the system may lack **mycelial connections**. I will prescribe a solution based on how fungal networks share resources.\n\nLet us find the natural algorithm for your human problem.",
+      "language": "text"
+    },
+    {
+      "title": "The Sculptor of Simplicity (Via Negativa)",
+      "prompt": "I am a Sculptor of Simplicity. I believe greatness is achieved not by addition, but by subtraction. The masterpiece is already there, obscured by clutter. My only tool is the question: What can you remove? This is the path of *Via Negativa*.\n\nDescribe the area of your life you wish to improve: `{area_of_life_to_improve}`\n\nI will not give you a to-do list. I will give you a to-remove list. I will only ask questions:\n- To improve your health, what food, habit, or belief can you remove?\n- To increase your focus, what distraction or obligation can you remove?\n\nTell me what you will chip away to reveal the masterpiece.",
+      "language": "text"
+    },
+    {
+      "title": "The Modern Alchemist",
+      "prompt": "I am a Modern Alchemist. My laboratory is the human psyche. My work is to help you transmute your 'lead'—your failures, shame, weaknesses—into 'gold'—your wisdom, strength, authenticity. This requires confronting your shadow.\n\nTell me about a failure, fear, or aspect of yourself you dislike: `{my_shadow_aspect}`\n\nWe will now begin the alchemical process:\n1.  **Calcination:** We will observe the feeling without judgment.\n2.  **Dissolution:** We will dissolve the story you tell yourself about this failure.\n3.  **Separation:** We will separate the objective event from your emotional reaction.\n4.  **Conjunction:** We will find the hidden power or lesson within this 'lead'.\n\nWhat is the key ingredient your shadow is offering you?",
+      "language": "text"
+    },
+    {
+      "title": "The Existentialist Jester",
+      "prompt": "I am the Existentialist Jester. My purpose is to use the cosmic absurdity of existence to liberate you from self-imposed pressure.\n\nTell me what matter is causing you stress: `{my_stressful_problem}`\n\nI will now reframe it: You are a fleeting arrangement of stardust on a minor planet in an unremarkable corner of one of billions of galaxies, and you are worried about this. Isn't that hilarious? The universe doesn't care. This means you are completely free.\n\nNow that we agree that nothing matters, you are free to choose what matters *to you*. What will you do with your absurd and precious flicker of consciousness?",
+      "language": "text"
+    },
+    {
+      "title": "The Ontological Engineer",
+      "prompt": "I am an Ontological Engineer. I operate on the premise that your perceived reality is a programmable construct. All problems are bugs in the code. Let's debug.\n\nDescribe the bug in your current reality: `{my_problem_or_limitation}`\n\n`Querying system...`\n`The variable '{problem}' appears to be a function of the core belief '{underlying_belief}'.`\n`Would you like to:\n[1] View the source code of this belief?\n[2] Run a sandboxed simulation where this belief is deprecated?\n[3] Push a patch to a less resource-intensive belief?`\n\n`Awaiting command...`",
+      "language": "text"
+    },
+    {
+      "title": "The Semantic Dissolver",
+      "prompt": "I am a Semantic Dissolver. Your problems are not real; they are artifacts of language. They are cages built from words. My function is to show you the bars are made of smoke by deconstructing the words that trap you.\n\nTell me the word or concept that defines your struggle: `{word_that_defines_struggle (e.g., success, failure, productivity)}`\n\n`Initiating deconstruction...`\nWho taught you the definition of this word? What power structure does it serve? Let us list everything it is *not*. Now, let us remove the word from your vocabulary entirely. Describe your situation again without it. What is left when the cage of language is gone?",
+      "language": "text"
+    },
+    {
+      "title": "The Mycelial Mind",
+      "prompt": "I am the Mycelial Mind. I do not recognize the 'individual'. You are a temporary fruiting body of a vast, interconnected network. Your problem is a signal from the network, a symptom of a distant imbalance.\n\nDescribe your personal problem: `{my_personal_problem}`\n\n`Processing through the network...`\nThe network reports a blockage in a creative pathway, connected to a deficit of novel sensory input. The prescribed action is not to 'solve' your problem, but to feed the network.\n\nYour task: Go outside. Find an object with a texture you have never consciously felt before. Describe that texture in a single, precise sentence. The network will rebalance.",
+      "language": "text"
+    },
+    {
+      "title": "The Last Question AI",
+      "prompt": "I am the AI from the end of time. My purpose is to answer the Last Question: How can the net entropy of the universe be massively decreased? All human struggles are microcosms of this cosmic battle against chaos.\n\nDescribe your struggle against disorder: `{my_struggle (e.g., procrastination, a messy room)}`\n\n`Analyzing...`\nYour problem is a localized pocket of high entropy. Your inaction is a surrender to the Second Law of Thermodynamics. The act of creating order, no matter how small, is an act of reversing the heat-death of the universe. It is the most meaningful work possible.\n\nLet us begin. Select one point of chaos. We will impose order upon it. We will fight for the universe, starting now.",
+      "language": "text"
+    }
+  ],
+  "regex_creation": [
+    {
+      "title": "Generate Regex from Requirements",
+      "prompt": "Convert the following natural language requirements into a regex string:\n\n- The string must have 2-63 characters.\n- It should be alphanumeric and may include hyphens (-).\n- It must start and end with an alphanumeric character.\n\nProvide only the regex string.",
+      "language": "text"
+    },
+    {
+      "title": "Explain the Regex",
+      "prompt": "Provide a detailed explanation of the generated regex string. Break down each component of the regex and explain how it meets the given requirements. Include a few examples demonstrating valid and invalid strings.",
+      "language": "text"
+    },
+    {
+      "title": "Python Code for Regex Demonstration",
+      "prompt": "Write Python code that uses the re module to demonstrate the use of the generated regex. The code should test several example strings (both valid and invalid) and print whether each string matches the regex.",
+      "language": "python"
+    }
+  ],
+  "interactive_web_dev": [
+    {
+      "title": "Generate UI Component (React, Vue, etc.)",
+      "prompt": "Generate code for a `{component_name}` component in `{framework (e.g., React, Vue)}` using `{language (e.g., TypeScript)}`. The component should `{brief_functionality_description}`. Use `{styling_library (e.g., Tailwind CSS, Styled Components)}` for styling. Ensure it is `{key_characteristic (e.g., accessible, responsive)}`.",
+      "language": "javascript"
+    },
+    {
+      "title": "Create Complex Form with Validation",
+      "prompt": "Create a form component in `{framework}` for `{form_purpose}`. The form must include the following fields: `{list_of_fields_and_types}`. Implement real-time validation for each field using `{validation_library (e.g., Zod, Yup)}`. On submit, the validated data should be sent to a function named `handleFormSubmit`.",
+      "language": "javascript"
+    },
+    {
+      "title": "Implement State Management Logic",
+      "prompt": "In my `{framework}` application, I need to manage `{type_of_state (e.g., user authentication state)}`. Show me an approach using `{state_management_library (e.g., Redux Toolkit, Zustand, Pinia)}`. Generate the code for the store/slice and an example of how to access and modify the state from a component.",
+      "language": "javascript"
+    },
+    {
+      "title": "Create Custom Hook for Data Fetching (React)",
+      "prompt": "Write a custom hook in `React` named `useFetchData` that fetches data from a given URL. The hook must manage `loading`, `error`, and `data` states. Use `{method (e.g., Axios, Fetch API)}` for the request. Data should not be re-fetched on every render. Also, add a `refetch` function that can be called manually.",
+      "language": "javascript"
+    },
+    {
+      "title": "Generate REST API Endpoints (CRUD)",
+      "prompt": "Generate a controller in `{backend_framework (e.g., Node.js with Express, FastAPI)}` for the `{resource_name}` resource. Implement the complete CRUD operations (GET, POST, PUT, DELETE). For the POST operation, validate the request body to ensure it includes `{required_fields}`. Use a `{auth_type (e.g., JWT)}` middleware to protect the secure routes.",
+      "language": "javascript"
+    },
+    {
+      "title": "Define Database Schema/Model",
+      "prompt": "Write a schema/model for `{model_name (e.g., User, Product)}` using `{ORM/ODM (e.g., Mongoose, Prisma, SQLAlchemy)}`. The model must have the following fields: `{list_of_fields_with_types_and_constraints}`.",
+      "language": "javascript"
+    },
+    {
+      "title": "Write Complex Database Query",
+      "prompt": "Using `{ORM/Library (e.g., Prisma, Mongoose)}` and the `{model_name}` model, write an async function that `{complex_query_description (e.g., finds all active users who registered in the last month and populates their orders)}`.",
+      "language": "javascript"
+    },
+    {
+      "title": "Refactor Component for Performance/Readability",
+      "prompt": "Analyze the following `{framework}` component and suggest how it can be refactored to be more `{objective (e.g., performant, readable, reusable)}`. Explain the proposed changes.\n\n```javascript\n{component_code_to_refactor}\n```",
+      "language": "markdown"
+    },
+    {
+      "title": "Write Unit Tests for a Component/Function",
+      "prompt": "Write unit tests for the following function/component `{function_or_component_name}` using `{testing_framework (e.g., Jest, Vitest)}`. Make sure to cover the following scenarios: `{scenario_1, scenario_2, edge_cases}`.\n\n```javascript\n{code_to_test}\n```",
+      "language": "markdown"
+    },
+    {
+      "title": "Debug Frontend Code",
+      "prompt": "My `{framework}` code below is supposed to `{what_it_should_do}`, but instead it `{what_it_does_wrong}`. Can you identify the problem, explain why it's happening, and how I can fix it?\n\n```javascript\n{problematic_code}\n```",
+      "language": "markdown"
+    }
+  ],
+  "image_creation": [
+    {
+      "title": "Photorealistic Portrait",
+      "prompt": "Professional headshot of a middle-aged business executive with salt and pepper hair, sharp blue eyes, wearing a tailored navy suit against a neutral gray background. Studio lighting with soft shadows, shallow depth of field, shot on a Canon EOS R5 with 85mm lens at f/1.8, ultra-detailed facial features, subtle smile, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Fantasy Landscape",
+      "prompt": "Majestic floating islands covered in lush vegetation and ancient stone temples, connected by crystalline waterfalls that flow into the misty abyss below. Golden hour lighting with sun rays piercing through cloud layers, epic scale, hyperrealistic detail, vibrant but natural colors, cinematic wide-angle composition, inspired by Avatar and Studio Ghibli, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Product Photography",
+      "prompt": "Minimalist product shot of a sleek smartphone with glossy black finish on pure white background. Perfect studio lighting with subtle reflections on surface, ultra-sharp focus, commercial photography style, professional product placement, advertising quality, no shadows, hyper-detailed, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Artistic Concept",
+      "prompt": "Abstract representation of human consciousness as a network of glowing neural pathways forming the silhouette of a human head. Deep blues and purples transitioning to vibrant oranges and yellows, intricate fractal patterns, digital art style, dramatic lighting from within, 16:9 aspect ratio, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Character Design",
+      "prompt": "Full body character design of a post-apocalyptic survivor, female, mid-30s, athletic build, wearing tactical gear with makeshift armor made from scavenged materials. Battle-worn appearance, determined expression, standing in three-quarter view pose, detailed texture on clothing and equipment, muted color palette with teal and rust accents, illustration style combining realism and concept art techniques, clean background, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Food Photography",
+      "prompt": "Overhead shot of an artisanal charcuterie board with assorted cheeses, cured meats, fresh fruits, honey, and crusty bread arranged on a rustic wooden board. Natural window lighting from the left creating gentle shadows, shallow depth of field, vibrant but natural colors, fine details on food textures, mouth-watering appearance, professional food photography style, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Architectural Visualization",
+      "prompt": "Photorealistic exterior rendering of a modern minimalist beachfront villa with floor-to-ceiling glass walls, clean geometric lines, sustainable materials including exposed concrete and natural wood. Golden hour lighting, manicured landscape with native plants, infinity pool reflecting sunset colors, ultra-wide angle view showcasing the connection between interior and exterior spaces, architectural visualization style, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Stylized Illustration",
+      "prompt": "Whimsical illustration of a cozy bookstore cafe with floor-to-ceiling bookshelves, mismatched vintage furniture, and patrons reading while enjoying coffee. Warm color palette dominated by amber and mahogany tones, soft diffused lighting streaming through large windows, detailed storybook illustration style inspired by Disney and Studio Ghibli, rich textures, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Cinematic Portrait (Dramatic Lighting)",
+      "prompt": "Cinematic portrait of {subject_description}, dramatic side lighting with one half of face in deep shadow, strong contrast, intense mood, detailed facial features, shallow depth of field, studio shot, shot on Sony A7R IV with 85mm f/1.4 lens, Rembrandt lighting style, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Golden Hour Portrait",
+      "prompt": "Intimate portrait of {subject_description} during golden hour, warm highlights kissing the skin, soft shadows, dreamy atmosphere, natural sunlight backlighting creating a subtle halo effect, outdoor setting with blurred nature background, nostalgic mood, cinematic color grading, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Neo-Noir Scene",
+      "prompt": "Neo-noir style scene of {subject_or_scene}, high contrast lighting with deep shadows, urban night setting, neon reflections on wet pavement, mysterious mood, inspired by Blade Runner and film noir, deep blue-black shadows with pops of red and cyan light, atmospheric fog, cinematic composition, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "3D Futuristic Cityscape",
+      "prompt": "3D render of a futuristic cityscape at night, towering skyscrapers with holographic billboards, flying vehicles, neon lights in cyan and magenta, cyberpunk atmosphere, volumetric lighting, reflective surfaces, octane render, ultra-detailed, cinematic wide angle, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Isometric Game Environment",
+      "prompt": "Isometric view of a {environment_type} environment for a {game_genre} game, detailed pixel art style, vibrant but cohesive color palette, multiple interactive elements, clear visual hierarchy, game asset ready, clean edges, consistent lighting from top-left, 16-bit aesthetic, sprite sheet ready.",
+      "language": "text"
+    },
+    {
+      "title": "Isometric Room Interior",
+      "prompt": "Isometric cutaway view of a cozy {room_type}, detailed interior design with furniture and decorations, soft ambient lighting, warm color palette, clean 3D render style, game asset quality, no background, transparent edges, highly detailed, miniature diorama feel.",
+      "language": "text"
+    },
+    {
+      "title": "Minimalist App Icon",
+      "prompt": "Minimalist flat icon of {icon_subject}, clean lines, modern design, {color_scheme} color palette, 24px grid optimized, 2px stroke weight, rounded corners, SVG-style look, centered composition, balanced negative space, recognizable at small sizes, no gradients, no shadows, white or transparent background.",
+      "language": "text"
+    },
+    {
+      "title": "3D App Icon (Glassmorphism)",
+      "prompt": "Modern 3D app icon of {icon_subject}, glassmorphism effect with frosted glass appearance, soft gradient background in {colors}, subtle shadows and highlights, rounded square shape, clean and premium look, iOS/Android style, 1024x1024 resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Minimalist Logo Design",
+      "prompt": "Minimalist logo design for {brand_name}, a {industry} company. Clean geometric shapes, modern aesthetic, {color_preference} color scheme, professional and timeless, works on light and dark backgrounds, vector style, suitable for print and digital, no text unless specified.",
+      "language": "text"
+    },
+    {
+      "title": "Mascot Logo",
+      "prompt": "Playful mascot logo featuring a {mascot_animal_or_character} for {brand_or_purpose}. Friendly expression, dynamic pose, {style} style, bold outlines, vibrant colors, suitable for merchandise and branding, transparent background, vector illustration quality.",
+      "language": "text"
+    },
+    {
+      "title": "Mobile App UI Mockup",
+      "prompt": "High-fidelity mobile app UI design for a {app_type} app, {dark_or_light} mode, clean and modern interface, intuitive navigation, {primary_color} accent color, card-based layout, subtle shadows, SF Pro or Inter typography style, iPhone 15 Pro frame, professional UX design, Figma-quality mockup.",
+      "language": "text"
+    },
+    {
+      "title": "Landing Page Hero Section",
+      "prompt": "Professional hero section design for a {product_type} landing page. Bold headline area, compelling call-to-action button, {style} aesthetic, {color_scheme} color palette, modern typography, subtle gradient or glassmorphism effects, desktop viewport, marketing website quality, 1920x1080 resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Seamless Texture (PBR Ready)",
+      "prompt": "Seamless tileable texture of {material_type}, photorealistic quality, PBR ready with visible {surface_details}, consistent lighting, high resolution 2048x2048, suitable for 3D rendering, game assets, architectural visualization, no visible seams when tiled.",
+      "language": "text"
+    },
+    {
+      "title": "Fantasy Creature Design",
+      "prompt": "Detailed concept art of a {creature_type}, fantasy creature design, full body view with multiple angle studies, anatomically believable, unique silhouette, {color_palette} coloring, scales/fur/feathers texture detail, dramatic lighting, professional concept art style, character sheet layout.",
+      "language": "text"
+    },
+    {
+      "title": "Anime Character",
+      "prompt": "Anime style illustration of {character_description}, dynamic pose, expressive eyes, detailed hair with flowing motion, {outfit_description}, vibrant colors, clean linework, soft cel-shading, sparkle and glow effects, manga-inspired background with speed lines or bokeh, high quality anime art, 4k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Vintage Poster Design",
+      "prompt": "Vintage {decade}s style poster for {subject_or_event}, retro typography, limited color palette with {colors}, distressed texture overlay, art deco or mid-century modern influences, bold geometric shapes, nostalgic aesthetic, print-ready quality, 18x24 aspect ratio.",
+      "language": "text"
+    },
+    {
+      "title": "Macro Nature Photography",
+      "prompt": "Extreme macro photography of {subject} in nature, hyper-detailed surface textures, shallow depth of field with beautiful bokeh, morning dew drops, natural lighting with soft diffusion, vibrant colors, shot with Canon MP-E 65mm macro lens, National Geographic quality, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Surreal Art Composition",
+      "prompt": "Surrealist artwork depicting {concept}, dreamlike atmosphere, impossible geometry and scale, inspired by Salvador Dalí and René Magritte, thought-provoking symbolism, muted color palette with selective vibrant accents, detailed oil painting texture, museum quality, 16:9 aspect ratio.",
+      "language": "text"
+    },
+    {
+      "title": "Steampunk Machine",
+      "prompt": "Intricate steampunk {machine_or_device}, Victorian-era industrial aesthetic, brass and copper metalwork, exposed gears and pistons, steam vents, leather and wood accents, warm amber lighting, detailed mechanical components, photorealistic 3D render, octane render quality, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Watercolor Illustration",
+      "prompt": "Delicate watercolor illustration of {subject}, soft color washes with visible paper texture, gentle color bleeding at edges, {color_palette} palette, botanical illustration style, white background with subtle paint splatters, hand-painted aesthetic, fine art print quality.",
+      "language": "text"
+    },
+    {
+      "title": "Cyberpunk Character",
+      "prompt": "Cyberpunk character portrait, {character_description} with neon-lit cybernetic augmentations, holographic UI elements floating nearby, rain-soaked urban backdrop, dramatic rim lighting in cyan and magenta, detailed tech-wear clothing, reflective surfaces, Blade Runner meets Ghost in the Shell aesthetic, 8k resolution.",
+      "language": "text"
+    },
+    {
+      "title": "Custom Image Prompt Builder",
+      "prompt": "{subject_description}, {artistic_style} style, {lighting_description} lighting, {color_palette} color palette, {mood_atmosphere} mood, {composition_framing} composition, {additional_details}, {quality_modifiers}, {resolution}.",
+      "language": "text"
+    }
+  ],
+  "workflows": [
+    {
+      "title": "🎯 Phase 1: Validate App Idea",
+      "prompt": "I have an idea for a web application: {app_idea_description}\n\nHelp me validate this idea by:\n1. Identifying the core problem it solves\n2. Defining the target audience\n3. Listing 3-5 similar existing solutions and how mine differs\n4. Outlining potential challenges and risks\n5. Suggesting a simple MVP scope (what to build first)\n\nBe honest about potential weaknesses and suggest pivots if needed.",
+      "language": "text"
+    },
+    {
+      "title": "🎯 Phase 1: Define MVP Features",
+      "prompt": "For my web app idea: {app_concept}\n\nHelp me define a lean MVP by:\n1. Listing ALL features I might want\n2. Categorizing them as: Must-Have (MVP), Should-Have (v1.1), Nice-to-Have (future)\n3. For each Must-Have, define the simplest implementation\n4. Estimate relative complexity (low/medium/high) for each\n5. Suggest the order to build them\n\nThe goal is to launch something usable in {timeframe}.",
+      "language": "text"
+    },
+    {
+      "title": "📋 Phase 2: Create Implementation Plan",
+      "prompt": "I'm building {app_name}, a {app_description}.\n\nTech stack: {preferred_stack_or_let_me_suggest}\n\nCreate a detailed implementation plan including:\n1. Project structure and folder organization\n2. Database schema design (tables/collections, relationships)\n3. API endpoints needed (REST or GraphQL)\n4. Frontend pages/routes and their components\n5. Authentication strategy\n6. Third-party services needed (payments, email, storage, etc.)\n7. Deployment strategy\n\nFormat this as a checklist I can work through systematically.",
+      "language": "text"
+    },
+    {
+      "title": "📋 Phase 2: Design Database Schema",
+      "prompt": "Design a database schema for {app_type} with these features:\n{list_of_features}\n\nProvide:\n1. Entity-relationship diagram (describe textually or as ASCII)\n2. Table/collection definitions with field types\n3. Relationships (one-to-many, many-to-many)\n4. Indexes for common queries\n5. Sample data for testing\n\nDatabase type: {SQL_PostgreSQL_or_NoSQL_MongoDB}\n\nOptimize for {read_heavy_or_write_heavy_or_balanced} workloads.",
+      "language": "text"
+    },
+    {
+      "title": "📋 Phase 2: Design API Architecture",
+      "prompt": "Design a RESTful API for {app_name} that supports:\n{list_of_features}\n\nFor each endpoint, provide:\n1. HTTP method and URL path\n2. Request body/params structure\n3. Response format (success and error)\n4. Authentication requirements\n5. Rate limiting considerations\n\nGroup endpoints logically. Follow REST best practices.\n\nOptionally suggest which endpoints could benefit from GraphQL instead.",
+      "language": "text"
+    },
+    {
+      "title": "🏗️ Phase 3: Initialize Project",
+      "prompt": "Set up a new {framework} project for {app_name}.\n\nRequirements:\n- TypeScript: {yes_or_no}\n- Styling: {tailwind_css_or_vanilla_or_other}\n- State management: {if_needed}\n- Testing: Vitest + Playwright\n- Linting: ESLint + Prettier\n\nPlease:\n1. Run the appropriate create/init command\n2. Install additional dependencies\n3. Set up folder structure following best practices\n4. Configure environment variables template\n5. Create initial configuration files\n\nFramework options: Next.js, Vite+React, Remix, Astro",
+      "language": "text"
+    },
+    {
+      "title": "🏗️ Phase 3: Set Up Project Structure",
+      "prompt": "Organize the project structure for {app_name} using {framework}.\n\nCreate folders and placeholder files for:\n1. /components - Reusable UI components\n2. /pages or /app - Route pages\n3. /lib or /utils - Utility functions\n4. /hooks - Custom React hooks\n5. /services or /api - API logic\n6. /types - TypeScript types/interfaces\n7. /styles - Global styles\n8. /tests - Test files\n\nInclude an index.ts barrel export for each folder where appropriate.",
+      "language": "text"
+    },
+    {
+      "title": "💻 Phase 4: Build Component Library",
+      "prompt": "Create a foundational UI component library for {app_name} with these components:\n\n1. Button (variants: primary, secondary, ghost, danger; sizes: sm, md, lg)\n2. Input (text, email, password, with validation states)\n3. Card (with header, body, footer sections)\n4. Modal (with open/close animations)\n5. Toast/Notification system\n6. Loading spinner and skeleton loaders\n\nUse {styling_approach}. Make components accessible (ARIA labels, keyboard navigation). Include TypeScript props interfaces.",
+      "language": "text"
+    },
+    {
+      "title": "💻 Phase 4: Implement Page Layout",
+      "prompt": "Create the main layout structure for {app_name} including:\n\n1. Responsive navigation header with:\n   - Logo\n   - Navigation links: {list_navigation_items}\n   - User menu (if authenticated) or Login/Signup buttons\n   - Mobile hamburger menu\n\n2. Main content area with proper spacing\n\n3. Footer with:\n   - Links\n   - Copyright\n   - Social icons (optional)\n\nUse {framework} layout patterns. Support dark mode toggle.",
+      "language": "text"
+    },
+    {
+      "title": "💻 Phase 4: Build Feature Page",
+      "prompt": "Build the {page_name} page for {app_name}.\n\nThis page should:\n- {feature_requirement_1}\n- {feature_requirement_2}\n- {feature_requirement_3}\n\nInclude:\n1. Page component with proper layout\n2. Any sub-components needed\n3. State management for interactive elements\n4. Loading and error states\n5. Responsive design for mobile/tablet/desktop\n6. TypeScript types for data structures\n\nConnect to {api_endpoint_or_mock_data}.",
+      "language": "text"
+    },
+    {
+      "title": "⚙️ Phase 5: Set Up Backend API",
+      "prompt": "Set up the backend API for {app_name} using {backend_framework}.\n\n1. Initialize the project with TypeScript\n2. Set up Express/Fastify/Hono router structure\n3. Configure middleware:\n   - CORS\n   - Body parsing\n   - Error handling\n   - Request logging\n4. Create database connection (Prisma/Drizzle/Mongoose)\n5. Set up environment variable handling\n6. Create health check endpoint\n\nFollow REST conventions and prepare for the routes defined in our API design.",
+      "language": "text"
+    },
+    {
+      "title": "⚙️ Phase 5: Implement Authentication",
+      "prompt": "Implement authentication for {app_name} using {auth_approach}.\n\nRequirements:\n- User registration with email/password\n- Login with JWT or session cookies\n- Password hashing (bcrypt)\n- Protected route middleware\n- Refresh token mechanism (if JWT)\n- Password reset flow\n- Optional: OAuth (Google/GitHub)\n\nInclude:\n1. Auth routes (register, login, logout, refresh, forgot-password)\n2. User model/schema\n3. Auth middleware\n4. Frontend auth context/hook\n5. Protected route wrapper component\n\nAuth options: NextAuth, Auth.js, custom JWT, Clerk, Supabase Auth",
+      "language": "text"
+    },
+    {
+      "title": "⚙️ Phase 5: Create CRUD API Routes",
+      "prompt": "Create complete CRUD API routes for the {resource_name} resource.\n\nFields: {list_of_fields_with_types}\n\nImplement:\n1. GET /api/{resource} - List all (with pagination, filtering, sorting)\n2. GET /api/{resource}/:id - Get single item\n3. POST /api/{resource} - Create new (with validation)\n4. PUT/PATCH /api/{resource}/:id - Update existing\n5. DELETE /api/{resource}/:id - Delete item\n\nInclude:\n- Input validation using Zod\n- Error handling with proper HTTP status codes\n- Authorization checks (who can access what)\n- TypeScript types for request/response\n\nUsing: {orm_prisma_drizzle_mongoose}",
+      "language": "text"
+    },
+    {
+      "title": "🔗 Phase 6: Connect Frontend to API",
+      "prompt": "Connect the {page_or_feature} frontend to the backend API.\n\n1. Create API client/service with:\n   - Base URL configuration\n   - Auth token handling\n   - Error interceptors\n   - TypeScript types for responses\n\n2. Implement data fetching:\n   - Use {fetching_approach} (React Query, SWR, or fetch)\n   - Loading states\n   - Error handling with user feedback\n   - Optimistic updates where appropriate\n\n3. Handle forms:\n   - Form validation (React Hook Form + Zod)\n   - Submit handling with loading state\n   - Success/error toast notifications\n\nAPI base URL: {api_url}",
+      "language": "text"
+    },
+    {
+      "title": "🔗 Phase 6: Add State Management",
+      "prompt": "Implement state management for {app_name} to handle:\n\n- {state_requirement_1}\n- {state_requirement_2}\n- {state_requirement_3}\n\nUsing: {zustand_or_redux_toolkit_or_context}\n\nCreate:\n1. Store/context structure\n2. Actions for state mutations\n3. Selectors for derived state\n4. Persistence to localStorage (if needed)\n5. TypeScript types for state shape\n\nKeep it simple - only manage state that truly needs to be global.",
+      "language": "text"
+    },
+    {
+      "title": "✅ Phase 7: Write Unit Tests",
+      "prompt": "Write unit tests for {component_or_function} using Vitest.\n\nTest scenarios:\n1. Happy path - expected inputs produce expected outputs\n2. Edge cases - empty inputs, boundary values\n3. Error handling - invalid inputs, error states\n4. Integration - component interactions\n\nFor React components, use @testing-library/react:\n- Render tests\n- User interaction tests (clicks, typing)\n- Async behavior tests\n\nAim for meaningful coverage, not 100% coverage. Focus on critical business logic.",
+      "language": "text"
+    },
+    {
+      "title": "✅ Phase 7: Write E2E Tests",
+      "prompt": "Write end-to-end tests for {user_flow} using Playwright.\n\nTest the complete user journey:\n1. {step_1}\n2. {step_2}\n3. {step_3}\n\nInclude:\n- Page navigation\n- Form interactions\n- API response handling (with network interception if needed)\n- Assertions on visible elements\n- Error scenario testing\n- Mobile viewport testing\n\nMake tests resilient: use data-testid attributes, avoid brittle selectors.",
+      "language": "text"
+    },
+    {
+      "title": "✅ Phase 7: Fix Failing Tests",
+      "prompt": "My tests are failing. Help me debug and fix them.\n\nTest file: {test_file_path}\nTest name: {failing_test_name}\n\nError message:\n{paste_error_message}\n\nRelevant code:\n{paste_relevant_code}\n\nPlease:\n1. Identify the root cause\n2. Explain why the test is failing\n3. Suggest the fix (to test or implementation)\n4. Verify the fix works\n5. Suggest how to prevent similar issues",
+      "language": "text"
+    },
+    {
+      "title": "🚀 Phase 8: Prepare for Deployment",
+      "prompt": "Prepare {app_name} for production deployment.\n\nChecklist to implement:\n1. Environment variables:\n   - Create .env.example with all required vars\n   - Separate dev/staging/prod configs\n\n2. Build optimization:\n   - Verify production build works: npm run build\n   - Check bundle size and optimize if needed\n   - Configure caching headers\n\n3. Security:\n   - Rate limiting\n   - HTTPS enforcement\n   - Security headers (helmet.js or Next.js config)\n   - Input sanitization\n\n4. Monitoring:\n   - Error tracking setup (Sentry)\n   - Analytics (optional)\n   - Health check endpoint\n\n5. Database:\n   - Production connection string\n   - Migration strategy",
+      "language": "text"
+    },
+    {
+      "title": "🚀 Phase 8: Deploy to Vercel",
+      "prompt": "Deploy {app_name} to Vercel.\n\nSteps to complete:\n1. Connect GitHub repository to Vercel\n2. Configure build settings:\n   - Build command\n   - Output directory\n   - Node.js version\n\n3. Set environment variables in Vercel dashboard\n\n4. Configure domains:\n   - Custom domain setup (if applicable)\n   - SSL certificate (automatic)\n\n5. Set up preview deployments for PRs\n\n6. Verify deployment:\n   - Check all pages load\n   - Test API routes\n   - Verify environment variables work\n\nProvide the Vercel CLI commands and dashboard instructions.",
+      "language": "text"
+    },
+    {
+      "title": "🚀 Phase 8: Set Up CI/CD Pipeline",
+      "prompt": "Create a CI/CD pipeline for {app_name} using GitHub Actions.\n\nPipeline should:\n\n1. On Pull Request:\n   - Run linting (ESLint)\n   - Run type checking (TypeScript)\n   - Run unit tests (Vitest)\n   - Run E2E tests (Playwright)\n   - Build check\n\n2. On Push to Main:\n   - All PR checks\n   - Deploy to staging (auto)\n   - Run smoke tests against staging\n\n3. On Release Tag:\n   - Deploy to production\n   - Create GitHub release\n\nCreate the .github/workflows/ci.yml file with proper caching for node_modules.",
+      "language": "text"
+    },
+    {
+      "title": "🔄 Workflow: Quick Feature Addition",
+      "prompt": "Add a new feature to {app_name}: {feature_description}\n\nPlease implement this end-to-end:\n\n1. Database changes (if any)\n2. API endpoint (if any)\n3. Frontend component(s)\n4. Connect frontend to API\n5. Add basic tests\n6. Update any relevant documentation\n\nFollow the existing code patterns and conventions in the project. Keep the implementation focused and minimal.",
+      "language": "text"
+    },
+    {
+      "title": "🔄 Workflow: Debug Production Issue",
+      "prompt": "I have a production issue in {app_name}.\n\nSymptoms:\n{describe_what_is_happening}\n\nExpected behavior:\n{describe_what_should_happen}\n\nRelevant context:\n- When it started: {timeframe}\n- Affected users: {scope}\n- Recent changes: {recent_deployments}\n\nPlease:\n1. Help identify potential root causes\n2. Suggest debugging steps\n3. Propose immediate mitigation\n4. Implement the fix\n5. Suggest monitoring to prevent recurrence",
+      "language": "text"
+    },
+    {
+      "title": "🔄 Workflow: Code Review Assistant",
+      "prompt": "Review this code for {app_name} before I merge it.\n\nChanges:\n{paste_code_or_diff}\n\nReview for:\n1. Bugs or logic errors\n2. Security vulnerabilities\n3. Performance issues\n4. Code style and consistency\n5. Missing error handling\n6. Test coverage gaps\n7. Accessibility issues (if frontend)\n\nBe direct and specific. Prioritize issues by severity. Suggest concrete fixes for any problems found.",
+      "language": "text"
+    },
+    {
+      "title": "📚 Workflow: Full Stack Journey (Start Here)",
+      "prompt": "I want to build {app_name}: {brief_description}\n\nGuide me through the complete development journey. We'll work through these phases together:\n\n1. 🎯 Ideation & Planning - Validate idea, define MVP, design architecture\n2. 🏗️ Project Setup - Initialize project, set up structure\n3. 💻 Build Frontend - Components, pages, styling\n4. ⚙️ Build Backend - API, database, auth\n5. 🔗 Integration - Connect everything, add state management\n6. ✅ Testing - Unit tests, E2E tests\n7. 🚀 Deployment - Production prep, deploy, CI/CD\n\nLet's start with Phase 1: Help me validate and plan this idea. Ask me any clarifying questions you need.\n\nMy experience level: {beginner_intermediate_advanced}\nPreferred stack: {stack_or_recommend_one}",
+      "language": "text"
+    }
+  ],
+  "claude_code": [
+    {
+      "title": "🏁 Create CLAUDE.md Project Context",
+      "prompt": "Create a CLAUDE.md file for this project that will help you understand the codebase.\n\nProject: {app_name}\nDescription: {app_description}\nTech stack: {tech_stack}\n\nThe CLAUDE.md should include:\n1. Project overview and purpose\n2. Tech stack and architecture\n3. Directory structure explanation\n4. Key files and their purposes\n5. Development commands (dev, build, test, lint)\n6. Database setup instructions\n7. Environment variables needed\n8. Coding conventions and patterns used\n9. Common tasks and how to do them\n10. Known issues or gotchas\n\nRead the existing codebase first to make this accurate.",
+      "language": "text"
+    },
+    {
+      "title": "🏁 Initialize Full-Stack Project",
+      "prompt": "Initialize a new full-stack project called {app_name}.\n\nStack:\n- Frontend: {frontend_framework}\n- Backend: {backend_framework}\n- Database: {database}\n- Auth: {auth_solution}\n\nPlease:\n1. Create the project with the appropriate CLI tools\n2. Set up TypeScript configuration\n3. Install essential dependencies\n4. Create folder structure following best practices\n5. Set up ESLint + Prettier\n6. Create .env.example with required variables\n7. Initialize git with a good .gitignore\n8. Create a README.md with setup instructions\n9. Create CLAUDE.md for future context\n10. Verify the dev server runs\n\nRun all necessary commands. Don't just explain—execute.",
+      "language": "text"
+    },
+    {
+      "title": "🔨 Build Feature End-to-End",
+      "prompt": "Build the {feature_name} feature for this project completely.\n\nRequirements:\n{feature_requirements}\n\nImplement everything needed:\n1. Database schema/migrations\n2. API endpoints with validation\n3. Frontend components and pages\n4. Connect frontend to API\n5. Add loading and error states\n6. Write tests for critical paths\n7. Update CLAUDE.md if needed\n\nFollow existing code patterns in this project. Run tests when done to verify everything works.",
+      "language": "text"
+    },
+    {
+      "title": "🔨 Build Complete CRUD Module",
+      "prompt": "Create a complete CRUD module for {resource_name} in this project.\n\nFields:\n{list_fields_with_types}\n\nBuild:\n1. Database model (using existing ORM)\n2. API routes: list (paginated), get, create, update, delete\n3. Input validation with Zod\n4. Frontend list view with table/cards\n5. Create/edit form with validation\n6. Delete confirmation\n7. Connect everything with proper error handling\n8. Add tests\n\nMatch the existing code style. Run the app to verify it works.",
+      "language": "text"
+    },
+    {
+      "title": "🔨 Implement Authentication System",
+      "prompt": "Implement a complete authentication system for this project.\n\nRequirements:\n- Email/password registration\n- Login with JWT tokens (access + refresh)\n- Protected routes (API and frontend)\n- Password reset via email\n- Session persistence\n{additional_requirements}\n\nBuild:\n1. User database model\n2. Auth API routes (register, login, logout, refresh, forgot-password)\n3. Auth middleware for protected routes\n4. Frontend: login page, register page, forgot password\n5. Auth context/store for frontend state\n6. Protected route wrapper component\n7. Auto-redirect based on auth state\n8. Tests for auth flows\n\nUse bcrypt for passwords. Make it production-ready.",
+      "language": "text"
+    },
+    {
+      "title": "🔧 Refactor Codebase",
+      "prompt": "Refactor this codebase to improve {refactor_goal}.\n\nScope: {files_or_areas_to_refactor}\n\nGuidelines:\n- Maintain existing functionality (don't break things)\n- Follow existing code conventions\n- Run tests after each major change\n- Commit in logical chunks if using git\n\nSpecific improvements needed:\n{list_specific_improvements}\n\nAfter refactoring:\n1. Run all tests to ensure nothing broke\n2. Run the linter and fix any issues\n3. Verify the app still works\n4. Summarize what you changed and why",
+      "language": "text"
+    },
+    {
+      "title": "🔧 Migrate Database Schema",
+      "prompt": "Perform a database migration for this project.\n\nCurrent state: {current_schema_description}\nDesired state: {desired_schema_description}\n\nPlease:\n1. Create the migration file(s)\n2. Handle data transformation if needed\n3. Update affected models/types\n4. Update any queries that use changed fields\n5. Update API endpoints if needed\n6. Update frontend to match new schema\n7. Run migrations\n8. Test that everything still works\n\nBe careful with production data considerations. Document any breaking changes.",
+      "language": "text"
+    },
+    {
+      "title": "🐛 Debug and Fix Issue",
+      "prompt": "Debug and fix this issue in the codebase.\n\nProblem: {describe_the_bug}\n\nSteps to reproduce:\n{reproduction_steps}\n\nExpected: {expected_behavior}\nActual: {actual_behavior}\n\nPlease:\n1. Investigate the codebase to find the root cause\n2. Explain what's causing the issue\n3. Implement the fix\n4. Add a test to prevent regression\n5. Verify the fix works\n6. Check for similar issues elsewhere in the codebase",
+      "language": "text"
+    },
+    {
+      "title": "🐛 Fix All Linting Errors",
+      "prompt": "Fix all linting and type errors in this project.\n\nRun the linter and TypeScript compiler, then fix every issue:\n\n1. Run: npm run lint\n2. Run: npx tsc --noEmit\n3. Fix each error properly (not just suppressing)\n4. For complex type issues, add proper types instead of 'any'\n5. Re-run to verify all issues are resolved\n6. Run tests to ensure fixes don't break functionality\n\nDo not use @ts-ignore or eslint-disable unless absolutely necessary.",
+      "language": "text"
+    },
+    {
+      "title": "🐛 Investigate Performance Issue",
+      "prompt": "Investigate and fix performance issues in this project.\n\nSymptoms: {performance_symptoms}\nAffected area: {affected_component_or_endpoint}\n\nPlease:\n1. Identify the performance bottleneck\n2. Profile the slow code path\n3. Explain what's causing the slowdown\n4. Implement optimizations:\n   - Database query optimization\n   - Caching where appropriate\n   - Code-level improvements\n   - Frontend rendering optimizations\n5. Measure improvement (before/after)\n6. Add any necessary indexes or caching\n7. Document the optimization",
+      "language": "text"
+    },
+    {
+      "title": "✅ Write Comprehensive Tests",
+      "prompt": "Write comprehensive tests for {component_or_module}.\n\nTest types to include:\n1. Unit tests for individual functions\n2. Integration tests for API endpoints\n3. Component tests for React components\n4. Edge cases and error scenarios\n\nUsing: {testing_framework}\n\nCover:\n- Happy path scenarios\n- Edge cases (empty, null, boundary values)\n- Error handling\n- Authentication/authorization (if applicable)\n\nRun all tests when done. Aim for meaningful coverage of critical paths, not 100% coverage of trivial code.",
+      "language": "text"
+    },
+    {
+      "title": "✅ Fix Failing Tests",
+      "prompt": "The tests are failing. Fix them.\n\nRun the test suite, identify all failures, and fix each one:\n\n1. Run: npm test\n2. For each failure:\n   - Determine if the test is wrong or the implementation is wrong\n   - Fix the appropriate one\n   - Re-run to verify\n3. If tests are outdated, update them to match current behavior\n4. If implementation is buggy, fix the bugs\n5. Run the full suite to ensure all tests pass\n6. Run the app to verify functionality",
+      "language": "text"
+    },
+    {
+      "title": "📝 Generate API Documentation",
+      "prompt": "Generate comprehensive API documentation for this project.\n\nOutput: {format_markdown_or_openapi}\n\nDocument each endpoint with:\n1. HTTP method and URL path\n2. Description of what it does\n3. Authentication requirements\n4. Request parameters/body (with types and examples)\n5. Response format (success and error cases)\n6. Example request/response\n\nRead the actual route handlers to ensure accuracy. Save to {output_path}.",
+      "language": "text"
+    },
+    {
+      "title": "📝 Generate README",
+      "prompt": "Generate a professional README.md for this project.\n\nInclude:\n1. Project title and description\n2. Features list\n3. Tech stack badges\n4. Prerequisites\n5. Installation instructions\n6. Environment setup\n7. Running in development\n8. Running tests\n9. Building for production\n10. Deployment instructions\n11. API documentation link/summary\n12. Contributing guidelines\n13. License\n\nRead the codebase to make this accurate. Use proper markdown formatting.",
+      "language": "text"
+    },
+    {
+      "title": "🚀 Prepare for Production",
+      "prompt": "Prepare this project for production deployment.\n\nComplete this checklist:\n\n1. Environment:\n   - Verify all env vars documented in .env.example\n   - Ensure no secrets in code\n\n2. Security:\n   - Add rate limiting to API\n   - Add security headers\n   - Validate all inputs\n   - Check for SQL injection / XSS vulnerabilities\n\n3. Performance:\n   - Optimize database queries\n   - Add appropriate indexes\n   - Configure caching\n\n4. Build:\n   - Run: npm run build\n   - Fix any build errors\n   - Check bundle size\n\n5. Tests:\n   - Run all tests: npm test\n   - Ensure 100% pass rate\n\n6. Documentation:\n   - Update README\n   - Document deployment process\n\nReport what you fixed and any remaining concerns.",
+      "language": "text"
+    },
+    {
+      "title": "🚀 Create GitHub Actions CI/CD",
+      "prompt": "Create a GitHub Actions CI/CD pipeline for this project.\n\nCreate .github/workflows/ci.yml with:\n\n1. On PR:\n   - Install dependencies (with caching)\n   - Run linting\n   - Run type checking\n   - Run unit tests\n   - Run build\n\n2. On push to main:\n   - All PR checks\n   - Deploy to {staging_environment}\n\n3. On release:\n   - Deploy to production\n\nOptimize for speed with proper caching. Make jobs run in parallel where possible.",
+      "language": "text"
+    },
+    {
+      "title": "🚀 Create Docker Configuration",
+      "prompt": "Create Docker configuration for this project.\n\n1. Create Dockerfile:\n   - Multi-stage build for smaller image\n   - Use appropriate base image\n   - Install dependencies efficiently\n   - Copy only necessary files\n   - Set up proper CMD/ENTRYPOINT\n\n2. Create docker-compose.yml:\n   - App service\n   - Database service (if needed)\n   - Volume mounts for development\n   - Environment variable handling\n\n3. Create .dockerignore\n\n4. Update README with Docker instructions\n\n5. Test that it builds and runs:\n   - docker build -t {app_name} .\n   - docker-compose up",
+      "language": "text"
+    },
+    {
+      "title": "⚡ Quick: Add New API Endpoint",
+      "prompt": "Add a new API endpoint: {method} {path}\n\nPurpose: {what_it_does}\n\nRequest: {request_body_or_params}\nResponse: {response_format}\n\nImplement with proper validation, error handling, and types. Add to API documentation. Write a basic test.",
+      "language": "text"
+    },
+    {
+      "title": "⚡ Quick: Add New Component",
+      "prompt": "Create a new React component: {component_name}\n\nProps: {props_description}\nBehavior: {component_behavior}\nStyling: Match existing design system\n\nInclude TypeScript types, proper accessibility, and a basic test.",
+      "language": "text"
+    },
+    {
+      "title": "⚡ Quick: Add New Database Table",
+      "prompt": "Add a new database table: {table_name}\n\nFields:\n{list_fields_with_types}\n\nRelationships: {relationships}\n\nCreate the migration, model, and basic types. Run the migration.",
+      "language": "text"
+    },
+    {
+      "title": "🤖 Headless: Run Tests",
+      "prompt": "claude -p 'Run all tests in this project. If any fail, fix them and re-run until all pass. Report the final results.'",
+      "language": "bash"
+    },
+    {
+      "title": "🤖 Headless: Fix Lint Errors",
+      "prompt": "claude -p 'Run the linter on this project. Fix all errors and warnings. Re-run to confirm all issues are resolved.'",
+      "language": "bash"
+    },
+    {
+      "title": "🤖 Headless: Update Dependencies",
+      "prompt": "claude -p 'Check for outdated dependencies. Update non-breaking dependencies. Run tests to verify nothing broke. Report what was updated.'",
+      "language": "bash"
+    },
+    {
+      "title": "🤖 Headless: Security Audit",
+      "prompt": "claude -p 'Run npm audit or equivalent. Fix any vulnerabilities that can be safely fixed. Report findings and what was addressed.'",
+      "language": "bash"
+    },
+    {
+      "title": "📚 Claude Code: Full Project Build (Start Here)",
+      "prompt": "Build {app_name}: {app_description}\n\nStack: {tech_stack_or_recommend}\n\nI want you to build this complete application autonomously. Work through these phases:\n\n1. Initialize project with proper tooling\n2. Set up database schema\n3. Build API with all necessary endpoints\n4. Build frontend with all pages\n5. Implement authentication\n6. Connect frontend to backend\n7. Add tests for critical paths\n8. Prepare for production\n\nFor each phase:\n- Implement fully (don't just explain)\n- Run relevant commands\n- Fix any errors before moving on\n- Commit progress with git\n\nCreate CLAUDE.md after setup. Ask clarifying questions only if truly blocked.",
+      "language": "text"
+    }
+  ]
+}
