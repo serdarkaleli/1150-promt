@@ -38,7 +38,7 @@ export const Header: React.FC<HeaderProps> = ({
   const { user, isAuthenticated, logout } = useAuth();
 
   return (
-    <header className="sticky top-0 z-30 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 text-slate-100 transition-colors">
+    <header className="sticky top-0 z-30 bg-slate-950/85 backdrop-blur-xl border-b border-white/10 text-slate-100 transition-colors shadow-lg shadow-black/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-3">
           {/* Brand Logo */}
@@ -52,13 +52,13 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
 
             <div className="flex items-center gap-2 cursor-pointer select-none">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-violet-600 via-indigo-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-violet-500/20 text-white font-bold text-sm">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-violet-600 via-indigo-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-violet-500/25 text-white font-bold text-sm ring-1 ring-white/20">
                 <Sparkles className="w-4 h-4" />
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-1">
                   <span className="font-bold text-sm sm:text-base tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-200 bg-clip-text text-transparent">
-                    PromptHub
+                    PromptVault
                   </span>
                   <span className="text-[9px] uppercase tracking-wider font-semibold px-1 py-0.2 rounded bg-violet-500/20 text-violet-300 border border-violet-500/30">
                     Pro
@@ -79,7 +79,7 @@ export const Header: React.FC<HeaderProps> = ({
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 placeholder="Ara..."
-                className="w-full pl-8 pr-7 py-1.5 bg-slate-950/70 border border-slate-700/80 rounded-xl text-xs placeholder-slate-400 text-slate-100 focus:outline-none focus:ring-1 focus:ring-violet-500 transition-all shadow-inner"
+                className="w-full pl-8 pr-7 py-2 bg-slate-900/80 border border-slate-700/80 rounded-xl text-xs placeholder-slate-500 text-slate-100 focus:outline-none focus:ring-2 focus:ring-violet-500/50 transition-all shadow-inner"
               />
               {searchQuery && (
                 <button

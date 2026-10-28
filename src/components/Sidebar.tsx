@@ -82,7 +82,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   };
 
   const sidebarContent = (
-    <div className="flex flex-col h-full bg-slate-900/90 text-slate-200 p-4 border-r border-slate-800 overflow-y-auto">
+    <div className="flex flex-col h-full bg-slate-950/55 text-slate-200 p-4 border-r border-white/10 overflow-y-auto">
       {/* Mobile Header in Drawer */}
       <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-800 lg:hidden">
         <div className="flex items-center gap-2">

@@ -208,7 +208,7 @@ function PromptHubApp() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-violet-600 selection:text-white">
+    <div className="min-h-screen bg-transparent text-slate-100 flex flex-col font-sans">
       {/* Top Navbar */}
       <Header
         searchQuery={searchQuery}
@@ -225,7 +225,7 @@ function PromptHubApp() {
       />
 
       {/* Main Container */}
-      <div className="flex-1 max-w-7xl w-full mx-auto flex">
+      <div className="flex-1 max-w-[1440px] w-full mx-auto flex">
         {/* Left Sidebar */}
         <Sidebar
           categories={categories}
