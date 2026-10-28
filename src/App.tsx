@@ -9,6 +9,7 @@ import {
   CheckCircle,
   LogIn,
 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { ToastProvider, useToast } from './components/Toast';
 import { Header } from './components/Header';
@@ -513,6 +514,7 @@ export default function App() {
     <AuthProvider>
       <ToastProvider>
         <PromptHubApp />
+        <SpeedInsights />
       </ToastProvider>
     </AuthProvider>
   );
