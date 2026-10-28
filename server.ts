@@ -220,9 +220,14 @@ app.post('/api/prompts/:id/favorite', authMiddleware, (req: AuthRequest, res) =>
 
 app.post('/api/prompts/:id/copy', authMiddleware, (req: AuthRequest, res) => {
   const userId = req.user!.id;
-  const copy_count = db.incrementCopyCount(req.params.id, userId);
   const prompt = db.getPromptById(req.params.id, userId);
-  res.json({ copy_count, last_copied_at: prompt?.last_copied_at });
+  if (!prompt) {
+    return res.status(404).json({ error: 'Prompt bulunamadı.' });
+  }
+
+  const copy_count = db.incrementCopyCount(req.params.id, userId);
+  const updatedPrompt = db.getPromptById(req.params.id, userId);
+  res.json({ copy_count, last_copied_at: updatedPrompt?.last_copied_at });
 });
 
 app.post('/api/prompts/:id/revert', authMiddleware, (req: AuthRequest, res) => {
