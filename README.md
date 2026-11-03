@@ -135,6 +135,17 @@ PORT=3000
    - Hazır demo hesabı: `demo@prompthub.local` / `demo1234`
    - Veya "Kayıt Ol" sekmesinden kendi izole hesabınızı açın.
 
+### Kişisel erişim için yayınlama (Render)
+
+Bu sürüm React arayüzü ve Express API'sini aynı Node servisi olarak çalıştırır. Bu nedenle yalnızca statik Vercel deploy'u yerine Node web service kullanın:
+
+1. Repoyu GitHub'a push edin.
+2. Render'da **New > Blueprint** seçip repoyu bağlayın.
+3. Render, kökteki `render.yaml` dosyasındaki `1150-prompt` servisini oluşturur.
+4. Deploy tamamlanınca verilen `onrender.com` adresini bilgisayar ve telefondan açın.
+
+`JWT_SECRET` Render tarafından otomatik üretilir. Mevcut JSON veri deposu (`.data/db.json`) kişisel kullanım için çalışır; ancak Render'ın ücretsiz diskinde servis yeniden oluşturulursa veriler kalıcı olmayabilir. Düzenli olarak uygulamadaki JSON dışa aktarma özelliğiyle yedek alın.
+
 ---
 
 ## 5. Test Senaryoları
@@ -147,6 +158,7 @@ PORT=3000
 | **TS-04** | Tek Tıkla Kopyalama | Panoya kopyalanır, bildirim çıkar, kopyalama sayacı 1 artar. |
 | **TS-05** | Şablon Değişkenleri | `{{proje_adi}}` algılanır, formda doldurulup özelleştirilmiş kopyalama yapılır. |
 | **TS-06** | JSON Dışa & İçe Aktarma | Promptlar JSON olarak indirilir, başka bir hesapta eksiksiz içe aktarılır. |
+| **TS-07** | Prompt Test Laboratuvarı | Prompt detayından senaryo açılır, değişkenler doldurulur, eksik alanlar doğrulanır ve senaryo tarayıcıda kaydedilir. |
 
 ---
 

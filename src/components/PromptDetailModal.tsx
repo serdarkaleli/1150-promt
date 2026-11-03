@@ -20,6 +20,7 @@ import {
   AlertCircle,
   FileClock,
   Tag as TagIcon,
+  FlaskConical,
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import type { Prompt, Category, PromptVersion } from '../types';
@@ -41,6 +42,7 @@ interface PromptDetailModalProps {
   onToggleFavorite: (id: string) => Promise<void>;
   onIncrementCopy: (id: string) => Promise<void>;
   onPromptUpdated?: (prompt: Prompt) => void;
+  onOpenTestLab: (prompt: Prompt) => void;
 }
 
 export const PromptDetailModal: React.FC<PromptDetailModalProps> = ({
@@ -52,6 +54,7 @@ export const PromptDetailModal: React.FC<PromptDetailModalProps> = ({
   onToggleFavorite,
   onIncrementCopy,
   onPromptUpdated,
+  onOpenTestLab,
 }) => {
   const { showToast } = useToast();
 
@@ -289,6 +292,15 @@ export const PromptDetailModal: React.FC<PromptDetailModalProps> = ({
               aria-label="Favori Durumunu Değiştir"
             >
               <Heart className={`w-5 h-5 ${prompt.is_favorite ? 'fill-current' : ''}`} />
+            </button>
+
+            <button
+              onClick={() => onOpenTestLab(prompt)}
+              className="p-2 rounded-xl text-slate-400 hover:text-cyan-300 hover:bg-slate-800 transition-colors"
+              title="Test Laboratuvarı"
+              aria-label="Test Laboratuvarı"
+            >
+              <FlaskConical className="w-5 h-5" />
             </button>
 
             <button

@@ -43,25 +43,25 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     refreshUser();
   }, [refreshUser]);
 
-  const login = async (email: string, password: string) => {
+  const login = useCallback(async (email: string, password: string) => {
     const res = await api.login(email, password);
     setUser(res.user);
-  };
+  }, []);
 
-  const register = async (name: string, email: string, password: string) => {
+  const register = useCallback(async (name: string, email: string, password: string) => {
     const res = await api.register(name, email, password);
     setUser(res.user);
-  };
+  }, []);
 
-  const loginWithDemo = async () => {
+  const loginWithDemo = useCallback(async () => {
     const res = await api.login('demo@prompthub.local', 'demo1234');
     setUser(res.user);
-  };
+  }, []);
 
-  const logout = () => {
+  const logout = useCallback(() => {
     api.logout();
     setUser(null);
-  };
+  }, []);
 
   return (
     <AuthContext.Provider

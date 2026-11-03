@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import {
   Plus,
   SlidersHorizontal,
@@ -18,6 +18,7 @@ import { PromptCard } from './components/PromptCard';
 import { PromptDetailModal } from './components/PromptDetailModal';
 import { PromptFormModal } from './components/PromptFormModal';
 import { VariableReplacerModal } from './components/VariableReplacerModal';
+import { PromptTestLabModal } from './components/PromptTestLabModal';
 import { DeployGuideModal } from './components/DeployGuideModal';
 import { ExportImportModal } from './components/ExportImportModal';
 import { AuthModal } from './components/AuthModal';
@@ -56,14 +57,17 @@ function PromptHubApp() {
   const [editingPrompt, setEditingPrompt] = useState<Prompt | null>(null);
   const [detailPrompt, setDetailPrompt] = useState<Prompt | null>(null);
   const [replacerPrompt, setReplacerPrompt] = useState<Prompt | null>(null);
+  const [testLabPrompt, setTestLabPrompt] = useState<Prompt | null>(null);
   const [isDeployGuideOpen, setIsDeployGuideOpen] = useState(false);
   const [isExportImportOpen, setIsExportImportOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const demoLoginAttempted = useRef(false);
 
-  // Auto-login with demo if unauthenticated on fresh applet mount for effortless testing
+  // Try demo login once; a failed request must not create a render/retry loop.
   useEffect(() => {
-    if (!authLoading && !isAuthenticated) {
+    if (!authLoading && !isAuthenticated && !demoLoginAttempted.current) {
+      demoLoginAttempted.current = true;
       loginWithDemo().catch(() => {});
     }
   }, [authLoading, isAuthenticated, loginWithDemo]);
@@ -481,6 +485,7 @@ function PromptHubApp() {
           setDetailPrompt(updated);
           setPrompts((prev) => prev.map((p) => (p.id === updated.id ? updated : p)));
         }}
+        onOpenTestLab={(prompt) => setTestLabPrompt(prompt)}
       />
 
       <VariableReplacerModal
@@ -488,6 +493,12 @@ function PromptHubApp() {
         isOpen={!!replacerPrompt}
         onClose={() => setReplacerPrompt(null)}
         onIncrementCopy={handleIncrementCopy}
+      />
+
+      <PromptTestLabModal
+        prompt={testLabPrompt}
+        isOpen={!!testLabPrompt}
+        onClose={() => setTestLabPrompt(null)}
       />
 
       <DeployGuideModal
