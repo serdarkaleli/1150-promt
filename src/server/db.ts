@@ -64,14 +64,130 @@ const DEFAULT_CATEGORIES: DBCategory[] = [
   { id: 'cat-6', name: 'Çeviri & Dil Öğrenimi', icon: 'Languages', color: '#06b6d4' },
 ];
 
+interface CommunityPromptRecord {
+  title: string;
+  prompt: string;
+  forDevs: boolean;
+  type: string;
+  contributor: string;
+}
+
+const COMMUNITY_PROMPT_CATEGORIES: Record<string, { name: string; color: string; icon: string }> = {
+  TEXT: { name: 'Topluluk Promptları • Metin', color: '#6366f1', icon: 'FileText' },
+  STRUCTURED: { name: 'Topluluk Promptları • Yapılandırılmış', color: '#10b981', icon: 'Braces' },
+  IMAGE: { name: 'Topluluk Promptları • Görsel', color: '#ec4899', icon: 'Image' },
+};
+
+function parsePromptCsv(raw: string): CommunityPromptRecord[] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let field = '';
+  let quoted = false;
+
+  for (let index = 0; index < raw.length; index += 1) {
+    const char = raw[index];
+    const nextChar = raw[index + 1];
+
+    if (char === '"' && quoted && nextChar === '"') {
+      field += '"';
+      index += 1;
+    } else if (char === '"') {
+      quoted = !quoted;
+    } else if (char === ',' && !quoted) {
+      row.push(field);
+      field = '';
+    } else if ((char === '\n' || char === '\r') && !quoted) {
+      if (char === '\r' && nextChar === '\n') index += 1;
+      row.push(field);
+      field = '';
+      if (row.some((value) => value.trim())) rows.push(row);
+      row = [];
+    } else {
+      field += char;
+    }
+  }
+
+  if (field || row.length > 0) {
+    row.push(field);
+    if (row.some((value) => value.trim())) rows.push(row);
+  }
+
+  if (rows.length < 2) return [];
+
+  const headers = rows[0].map((header) => header.replace(/^\uFEFF/, '').trim());
+  const indexOf = (name: string) => headers.indexOf(name);
+  const titleIndex = indexOf('act');
+  const promptIndex = indexOf('prompt');
+  const devIndex = indexOf('for_devs');
+  const typeIndex = indexOf('type');
+  const contributorIndex = indexOf('contributor');
+
+  if (titleIndex < 0 || promptIndex < 0) return [];
+
+  return rows.slice(1).flatMap((values) => {
+    const title = (values[titleIndex] || '').trim();
+    const prompt = (values[promptIndex] || '').trim();
+    if (!title || !prompt) return [];
+
+    return [{
+      title,
+      prompt,
+      forDevs: (values[devIndex] || '').trim().toUpperCase() === 'TRUE',
+      type: (values[typeIndex] || 'TEXT').trim().toUpperCase(),
+      contributor: (values[contributorIndex] || '').trim(),
+    }];
+  });
+}
+
+function loadCommunityPromptRecords(): CommunityPromptRecord[] {
+  const communityFile = path.resolve(process.cwd(), 'src/server/community-prompts.csv');
+  if (!fs.existsSync(communityFile)) return [];
+
+  try {
+    return parsePromptCsv(fs.readFileSync(communityFile, 'utf-8'));
+  } catch (error) {
+    console.error('Error loading community prompt CSV:', error);
+    return [];
+  }
+}
+
+function mapCommunityPrompt(
+  item: CommunityPromptRecord,
+  userId: string,
+  id: string,
+  timestamp: string
+): DBPrompt {
+  const category = COMMUNITY_PROMPT_CATEGORIES[item.type] || COMMUNITY_PROMPT_CATEGORIES.TEXT;
+  const tags = ['topluluk', item.type.toLowerCase()];
+  if (item.forDevs) tags.push('geliştirici');
+  if (item.contributor) tags.push('kaynak');
+
+  return {
+    id,
+    user_id: userId,
+    title: item.title,
+    description: item.contributor
+      ? `${category.name} • Katkı: ${item.contributor}`
+      : `${category.name} kaynağından içe aktarıldı.`,
+    content: item.prompt,
+    category: category.name,
+    tags,
+    is_favorite: false,
+    copy_count: 0,
+    created_at: timestamp,
+    updated_at: timestamp,
+  };
+}
+
 function getInitialPrompts(demoUserId: string): DBPrompt[] {
   const now = new Date().toISOString();
+  const initialPrompts: DBPrompt[] = [];
   const catalogFile = path.resolve(process.cwd(), 'src/server/master-prompts-1000.json');
   if (fs.existsSync(catalogFile)) {
     try {
       const rawCatalog = JSON.parse(fs.readFileSync(catalogFile, 'utf-8'));
       if (Array.isArray(rawCatalog) && rawCatalog.length > 0) {
-        return rawCatalog.map((item: any, idx: number) => ({
+        initialPrompts.push(...rawCatalog.map((item: any, idx: number) => ({
           id: `p-${idx + 1}`,
           user_id: demoUserId,
           title: item.title,
@@ -83,12 +199,20 @@ function getInitialPrompts(demoUserId: string): DBPrompt[] {
           copy_count: item.copy_count || 0,
           created_at: now,
           updated_at: now,
-        }));
+        })));
       }
     } catch (e) {
       console.error('Error loading initial master prompts catalog:', e);
     }
   }
+
+  const communityPrompts = loadCommunityPromptRecords();
+  initialPrompts.push(
+    ...communityPrompts.map((item, index) =>
+      mapCommunityPrompt(item, demoUserId, `community-${index + 1}`, now)
+    )
+  );
+  if (initialPrompts.length > 0) return initialPrompts;
 
   return [
     {
@@ -801,6 +925,35 @@ class LocalDB {
 
             this.data.prompts.push(newPrompt);
             existingTitles.add(item.title.toLowerCase().trim());
+            existingContents.add(contentKey);
+            importedCount++;
+          }
+
+          const communityPrompts = loadCommunityPromptRecords();
+          for (const item of communityPrompts) {
+            const category = COMMUNITY_PROMPT_CATEGORIES[item.type] || COMMUNITY_PROMPT_CATEGORIES.TEXT;
+            if (!this.data.categories.some((c) => c.name === category.name)) {
+              this.data.categories.push({
+                id: `cat-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
+                name: category.name,
+                icon: category.icon,
+                color: category.color,
+              });
+            }
+
+            const titleKey = item.title.toLowerCase().trim();
+            const contentKey = item.prompt.toLowerCase().trim().slice(0, 100);
+            if (existingTitles.has(titleKey) || existingContents.has(contentKey)) continue;
+
+            this.data.prompts.push(
+              mapCommunityPrompt(
+                item,
+                userId,
+                `p-${Date.now()}-${Math.random().toString(36).substring(2, 8)}`,
+                now
+              )
+            );
+            existingTitles.add(titleKey);
             existingContents.add(contentKey);
             importedCount++;
           }

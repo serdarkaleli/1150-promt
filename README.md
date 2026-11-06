@@ -42,6 +42,7 @@ Uygulama, hem yerel ortamda tek komutla bağımsız çalışabilen (Express + Vi
 │   │   ├── /server
 │   │   │   ├── db.ts                # Atomik dosya tabanlı veritabanı & hazır Türkçe promptlar
 │   │   │   └── auth.ts              # JWT token üretme & doğrulama middleware
+│   │   │   └── community-prompts.csv # Kaynak CSV'den içe aktarılan 2.879 prompt
 │   │   │
 │   │   └── /components
 │   │       ├── Header.tsx           # Üst bar, anlık arama, yeni prompt ve profil butonları
@@ -134,6 +135,8 @@ PORT=3000
 4. Tarayıcınızda `http://localhost:3000` adresini açın.
    - Hazır demo hesabı: `demo@prompthub.local` / `demo1234`
    - Veya "Kayıt Ol" sekmesinden kendi izole hesabınızı açın.
+
+CSV kaynak promptlarını mevcut bir yerel veritabanına eklemek için uygulama içindeki **Örnek Paket Yükle** düğmesini kullanın. Yeni kurulumlarda CSV promptları başlangıç kataloğuna otomatik dahil edilir. Kaynakta `TEXT`, `STRUCTURED` ve `IMAGE` türleri ayrı kategoriler olarak gösterilir.
 
 ### Kişisel erişim için yayınlama (Render)
 
