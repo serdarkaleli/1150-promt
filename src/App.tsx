@@ -37,6 +37,7 @@ function PromptHubApp() {
 
   // Filters
   const [searchQuery, setSearchQuery] = useState('');
+  const [debouncedSearchQuery, setDebouncedSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Tümü');
   const [selectedTag, setSelectedTag] = useState('Tümü');
   const [onlyFavorites, setOnlyFavorites] = useState(false);
@@ -68,53 +69,87 @@ function PromptHubApp() {
     }
   }, [authLoading, isAuthenticated, loginWithDemo]);
 
-  const loadData = useCallback(async () => {
+  useEffect(() => {
+    const timeoutId = window.setTimeout(() => {
+      setDebouncedSearchQuery(searchQuery);
+    }, 300);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [searchQuery]);
+
+  const loadPrompts = useCallback(async () => {
     if (!isAuthenticated) {
       setPrompts([]);
-      setCategories([]);
-      setTags([]);
       setIsLoading(false);
       return;
     }
 
     try {
       setIsLoading(true);
-      const [fetchedPrompts, fetchedCategories, fetchedTags, fetchedRecent] = await Promise.all([
-        api.getPrompts({
-          searchQuery,
-          category: selectedCategory,
-          tag: selectedTag,
-          onlyFavorites,
-          onlyFillable,
-          sortBy,
-        }),
-        api.getCategories(),
-        api.getTags(),
-        api.getRecentPrompts(3),
-      ]);
-
+      const fetchedPrompts = await api.getPrompts({
+        searchQuery: debouncedSearchQuery,
+        category: selectedCategory,
+        tag: selectedTag,
+        onlyFavorites,
+        onlyFillable,
+        sortBy,
+      });
       setPrompts(fetchedPrompts);
-      setCategories(fetchedCategories);
-      setTags(fetchedTags);
-      setRecentPrompts(fetchedRecent);
     } catch (err: any) {
       console.error('Error fetching data:', err);
       showToast(err.message || 'Veriler yüklenirken hata oluştu.', 'error');
     } finally {
       setIsLoading(false);
     }
-  }, [isAuthenticated, searchQuery, selectedCategory, selectedTag, onlyFavorites, onlyFillable, sortBy, showToast]);
+  }, [
+    isAuthenticated,
+    debouncedSearchQuery,
+    selectedCategory,
+    selectedTag,
+    onlyFavorites,
+    onlyFillable,
+    sortBy,
+    showToast,
+  ]);
+
+  const loadMetadata = useCallback(async () => {
+    if (!isAuthenticated) {
+      setCategories([]);
+      setTags([]);
+      setRecentPrompts([]);
+      return;
+    }
+
+    Promise.all([api.getCategories(), api.getTags(), api.getRecentPrompts(3)])
+      .then(([fetchedCategories, fetchedTags, fetchedRecent]) => {
+        setCategories(fetchedCategories);
+        setTags(fetchedTags);
+        setRecentPrompts(fetchedRecent);
+      })
+      .catch((err: any) => {
+        console.error('Error fetching library metadata:', err);
+        showToast(err.message || 'Kütüphane bilgileri yüklenirken hata oluştu.', 'error');
+      });
+  }, [isAuthenticated, showToast]);
 
   useEffect(() => {
-    loadData();
-  }, [loadData]);
+    loadMetadata();
+  }, [loadMetadata]);
+
+  useEffect(() => {
+    loadPrompts();
+  }, [loadPrompts]);
+
+  const refreshData = useCallback(async () => {
+    await Promise.all([loadPrompts(), loadMetadata()]);
+  }, [loadMetadata, loadPrompts]);
 
   const handleLoadSamplePack = async () => {
     try {
       setIsLoadingPack(true);
       const res = await api.loadSamplePack();
       showToast(res.message, 'success');
-      await loadData();
+      await refreshData();
     } catch (err: any) {
       showToast(err.message || 'Paket yüklenirken hata oluştu.', 'error');
     } finally {
@@ -171,7 +206,7 @@ function PromptHubApp() {
       await api.createPrompt(data);
       showToast('Yeni prompt başarıyla oluşturuldu!', 'success');
     }
-    await loadData();
+    await refreshData();
   };
 
   const handleDeletePrompt = async (id: string) => {
@@ -498,7 +533,7 @@ function PromptHubApp() {
       <ExportImportModal
         isOpen={isExportImportOpen}
         onClose={() => setIsExportImportOpen(false)}
-        onRefresh={loadData}
+        onRefresh={refreshData}
       />
 
       <AuthModal
