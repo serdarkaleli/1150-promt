@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+@layer base {
+  html {
+    background: #020617;
+  }
+
+  body {
+    min-width: 320px;
+    background:
+      radial-gradient(circle at 15% -10%, rgb(91 33 182 / 0.18), transparent 32rem),
+      radial-gradient(circle at 90% 0%, rgb(8 145 178 / 0.1), transparent 28rem),
+      #020617;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  ::selection {
+    background: rgb(124 58 237 / 0.5);
+  }
+}

@@ -61,6 +61,19 @@ function PromptHubApp() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const handleShortcut = (event: KeyboardEvent) => {
+      if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) return;
+      const target = event.target as HTMLElement;
+      if (target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) return;
+      event.preventDefault();
+      document.getElementById('prompt-search')?.focus();
+    };
+
+    window.addEventListener('keydown', handleShortcut);
+    return () => window.removeEventListener('keydown', handleShortcut);
+  }, []);
+
   // Auto-login with demo if unauthenticated on fresh applet mount for effortless testing
   useEffect(() => {
     if (!authLoading && !isAuthenticated) {
@@ -371,18 +384,19 @@ function PromptHubApp() {
                 Kriterlere Uygun Prompt Bulunamadı
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 max-w-sm mb-5">
-                {searchQuery || selectedCategory !== 'Tümü' || selectedTag !== 'Tümü' || onlyFavorites
+                {searchQuery || selectedCategory !== 'Tümü' || selectedTag !== 'Tümü' || onlyFavorites || onlyFillable
                   ? 'Filtreleri sıfırlayarak veya yeni bir arama yaparak tekrar deneyin.'
                   : 'Kütüphaneniz henüz boş. İlk master promptunuzu ekleyerek başlayın!'}
               </p>
               <div className="flex items-center gap-2">
-                {(searchQuery || selectedCategory !== 'Tümü' || selectedTag !== 'Tümü' || onlyFavorites) && (
+                {(searchQuery || selectedCategory !== 'Tümü' || selectedTag !== 'Tümü' || onlyFavorites || onlyFillable) && (
                   <button
                     onClick={() => {
                       setSearchQuery('');
                       setSelectedCategory('Tümü');
                       setSelectedTag('Tümü');
                       setOnlyFavorites(false);
+                      setOnlyFillable(false);
                     }}
                     className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-semibold transition-colors"
                   >

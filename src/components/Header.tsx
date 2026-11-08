@@ -75,12 +75,19 @@ export const Header: React.FC<HeaderProps> = ({
                 <Search className="w-3.5 h-3.5" />
               </div>
               <input
+                id="prompt-search"
                 type="text"
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                placeholder="Ara..."
-                className="w-full pl-8 pr-7 py-1.5 bg-slate-950/70 border border-slate-700/80 rounded-xl text-xs placeholder-slate-400 text-slate-100 focus:outline-none focus:ring-1 focus:ring-violet-500 transition-all shadow-inner"
+                placeholder="Promptlarda ara..."
+                aria-label="Promptlarda ara"
+                className="w-full pl-8 pr-14 py-2 bg-slate-950/70 border border-slate-700/80 rounded-xl text-xs placeholder-slate-400 text-slate-100 focus:outline-none focus:ring-2 focus:ring-violet-500/60 transition-all shadow-inner"
               />
+              {!searchQuery && (
+                <kbd className="absolute inset-y-0 right-2 hidden sm:flex items-center text-[10px] text-slate-500">
+                  /
+                </kbd>
+              )}
               {searchQuery && (
                 <button
                   onClick={() => onSearchChange('')}
